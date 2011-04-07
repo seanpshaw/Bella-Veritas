@@ -1,0 +1,8 @@
+dev:
+  domain: "bella"
+  deploy_to: "/home/bellaver/public_html/bellaveritas"
+  repository: "git@github.com:scmdigital/Pressflow-6.20.git"
+  project: "bellaveritas"
+  branch: "master"
+  # post_deploy_script: "/home/bellaver/public_html/bellaveritas/bin/post-deploy.sh"
+
