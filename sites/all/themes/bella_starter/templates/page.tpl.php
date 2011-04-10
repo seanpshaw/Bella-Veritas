@@ -10,8 +10,7 @@
   <meta name="description" content="<?php print $seo_description; ?>" /> 
   <meta name="keywords" content="<?php print $seo_keywords; ?>" />  
   
-  <link rel="stylesheet" href="/<?php echo path_to_theme(); ?>/styles/<?php echo $optimus_d6_style; ?>/styles.css" type="text/css" />
-	
+  <link rel="stylesheet" href="/<?php echo path_to_theme(); ?>/styles/<?php echo $tenseconds_style; ?>/styles.css" type="text/css" />	
   
 </head>
 <body class="<?php print $classes; ?>">
