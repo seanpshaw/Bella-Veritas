@@ -1,0 +1,85 @@
+div#messages-wrapper {
+  background: url('../images/message-bg.jpg');
+  border: #999999;
+  padding: 13px 0px 0px 0px;
+}
+div#messages-wrapper div.status {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.messages, div.status, div.warning, div.error {
+  min-height: 21px;
+  margin: 0 1em 5px 1em;
+  border: 2px solid #ffff77;
+  padding: 5px 5px 5px 35px;
+  color: #000000;
+  background-color: #ffffcc;
+  background-repeat: no-repeat;
+  background-position: 7px 5px;
+  font-size: 15px;
+}
+#page-wrapper div.messages {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.status {
+  border: 2px solid #230d02;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fdffce;
+  border-color: #8eb83f;
+  color: #2e2e2e;
+  background-image: url(../images/accept.png);
+}
+div.warning {
+  border-color: #ffcc00;
+  background-image: url(../images/messages-warning.png);
+}
+div.warning, tr.warning {
+  color: #000000;
+  background-color: #ffffcc;
+}
+div.error {
+  border-color: #cc0000;
+  background-image: url(../images/messages-error.png);
+}
+div.error, tr.error {
+  color: #990000;
+  background-color: #ffeeee;
+}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.form-item input.error { border: 2px solid #cc0000 !important; }
+
+
+
+
+div.warning {
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  background-color:#FDFFCE;
+  background-image:url("../images/warning.png");
+  border:2px solid #fff900;
+  color:#2E2E2E;
+  a:link, a:visited {
+    color: #207c0b
+  }
+}
+
+div.error {
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  background-color:#FDFFCE;
+  background-image:url("../images/error.png");
+  border:2px solid #d50000;
+  color:#2E2E2E;
+  a:link, a:visited {
+    color: #207c0b
+  }
+}
