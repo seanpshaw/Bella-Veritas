@@ -1,0 +1,60 @@
+.uses-pie {
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+}
+
+.border-radius(@radius: 5px) {
+  -moz-border-radius:@radius;
+  -webkit-border-radius:@radius;
+  border-radius:@radius;
+  .uses-pie;
+}
+
+/*  PIE does not currently support the 'inset' keyword, but support is planned in a future version */
+
+.box-shadow(@x_offset: -1px, @y_offset: -1px, @blur: 15px, @color: rgba(0,0,0,0.4)){
+  -moz-box-shadow: @x_offset @y_offset @blur @color;
+  -webkit-box-shadow: @x_offset @y_offset @blur @color;
+  box-shadow: @x_offset @y_offset @blur @color;
+  .uses-pie;
+}
+
+/*  background-attachment (will always use 'scroll' even if 'fixed' or 'local' are specified)
+    background-size (will always use the image's intrinsic size)
+    background-repeat values of 'space' or 'round' (the other repeat values are supported)
+    background-position values with more than 2 parts
+    
+    RGBA Color Values
+
+    PIE parses RGBA color values wherever they are allowed. 
+    However it is only able to successfully render their opacity value in a few contexts. 
+    In all other contexts they will be rendered with the correct RGB color, but fully opaque. 
+    Here are the supported contexts in which the opacity will be rendered correctly:
+
+    The solid background-color as specified in the -pie-background property.
+    The color value of box-shadow, if the shadow has no blur.
+    
+    THE IMAGE USED IN -PIE-BACKGROUND MUST BE THE ABSOLUTE PATH
+*/
+
+.multiple-background(@background-image:url(bg-image.png), @repeat:no-repeat, @position: 0 0, @color: #000, @moz-gradient:-moz-linear-gradient(#CCC, #EEE), @webkit-gradient:-webkit-gradient(linear, 0 0, 0 100%, from(#CCC) to(#EEE)), @linear-gradient:linear-gradient(#CCC, #EEE)) {
+  background: @background-image @repeat @position @color; /*non-CSS3 browsers will use this*/
+  background: @background-image @repeat @position, @moz-gradient; /*gecko*/
+  background: @background-image @repeat @position, @webkit-gradient; /*webkit*/
+  background: @background-image @repeat @position, @linear-gradient; /*future CSS3 browsers*/
+  -pie-background: @background-image @repeat @position, @linear-gradient; /*PIE*/
+  .uses-pie;
+}
+
+.rgba-background(@background-image:url(bg-image.png), @repeat:no-repeat, @position: 0 0, @rgba: rgba(0,0,0,0.4)) {
+  background: @background-image @repeat @position @rgba; /*non-CSS3 browsers will use this*/
+  -pie-background: @background-image @repeat @position @rgba; /*PIE*/
+  .uses-pie;
+}
+
+/*  PIE currently supports linear-gradient image values when used in the -pie-background property. 
+    Uses in any contexts other than the background are not supported. 
+    The supported syntax matches that of the current CSS3 Image Values module draft.
+*/
+
+

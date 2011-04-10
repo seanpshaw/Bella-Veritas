@@ -1,0 +1,993 @@
+@import "../../pie.less";
+
+@secondary_menu_main: #18598f;
+@secondary_menu_hover: #18598f * 0.50;
+@link: #3e3e3e;
+@link_visited: #61606f;
+@link_hover: #1a1a1a;
+@grey: #646464;
+@blue: #18598f;
+
+/**
+ * HTML Element Styling
+ *
+ */
+
+/*
+ * Fonts
+ *
+ * Our font size and line height declarations are based on the following ALA
+ * article:
+ *   http://www.alistapart.com/articles/howtosizetextincss
+ *
+ * All modern browsrs use a 16px default font size. Specifying the font-size
+ * and line-height in ems (relative to the 16px default font) allows the user
+ * to resize the font in the browser and produces the most consistent results
+ * across different browsers.
+ */
+body {
+  font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+}
+
+#skip-to-nav,
+#page {
+  /*
+   * To use a 12px font size on the page, delete the 14px declarations.
+   * to use a 14px font size on the page, delete the 12px declarations.
+   */
+
+  /* Use a 12px base font size with a 16px line height */
+  font-size: 0.75em; /* 16px x .75 = 12px */
+  line-height: 1.333em; /* 12px x 1.333 = 16px */
+
+
+  /* Use a 14px base font size with a 18px line height */
+  font-size: 0.875em; /* 16px x .875 = 14px */
+  line-height: 1.286em; /* 14px x 1.286 = 18px */
+}
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * fonts are commonly available on Linux systems where the MS fonts are less
+   * common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif or serif)
+   * hints at what type of font to use if the web browser doesn't find any
+   * of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+}
+
+/*
+ * Headings
+ */
+h1 {
+  color: ;
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0.5em; /* 0.5em is equavalent to 1em in the page's base font.
+                           Remember, a margin specified in ems is relative to
+                           the element's font-size, not to the pages' base
+                           font size. So, for example, if we want a 1em margin
+                           (relative to the base font), we have to divide that
+                           length by the element's font-size:
+                           1em / 2em = 0.5em */
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0.667em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+  margin-bottom: 0.667em;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-top: 0.769em; /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+  margin-bottom: 0.769em;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin-top: 0.909em; /* Equivalent to 1em in the page's base font: 1 / 1.1 = 0.909 */
+  margin-bottom: 0.909em;
+}
+
+/*
+ * Block-level elements
+ */
+p,
+ul,
+ol,
+dl,
+pre,
+table,
+fieldset {
+  margin: 1em 0;
+}
+
+blockquote {
+  margin: 1em 2em;
+}
+
+/*
+ * Lists
+ *
+ * We need to standardize the list item indentation.
+ */
+ul,
+ol {
+  margin-left: 0;
+  padding-left: 2em; /* LTR */
+}
+
+/* Drupal overrides */
+.block ul,
+.item-list ul  {
+  margin: 1em 0;
+  padding: 0 0 0 2em; /* LTR */
+}
+
+ul ul, ul ol,
+ol ol, ol ul,
+.block ul ul, .block ul ol,
+.block ol ol, .block ol ul,
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.item-list ul li  {
+  margin: 0;
+  padding: 0;
+  list-style: inherit;
+}
+
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf  {
+  margin: 0;
+  padding: 0;
+}
+
+ul          { list-style-type: disc; }
+ul ul       { list-style-type: circle; }
+ul ul ul    { list-style-type: square; }
+ul ul ul ul { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+ol ol       { list-style-type: lower-alpha; }
+ol ol ol    { list-style-type: decimal; }
+
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+/*
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+a:link {
+    color: @link;
+}
+
+a:visited {
+    color: @link_visited;
+}
+
+a:hover,
+a:focus {
+    color: @link_hover;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/*
+ * Tables
+ *
+ * Drupal provides table styling which is only useful for its admin section
+ * forms, so we override this default CSS. (We set it back in forms.css.)
+ */
+table {
+  border-collapse: collapse;
+  /* width: 100%; */ /* Prevent cramped-looking tables */
+}
+
+th,
+thead th,
+tbody th {
+  text-align: left; /* LTR */
+  padding: 0;
+  border-bottom: none;
+}
+
+tbody {
+  border-top: none;
+}
+
+/*
+ * Abbreviations
+ */
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+abbr.created  {
+  border: none;
+  cursor: auto;
+  white-space: normal;
+}
+
+/*
+ * Images
+ */
+img {
+  border: 0;
+}
+
+/*
+ * Horizontal rules
+ */
+hr {
+  height: 1px;
+  border: 1px solid #666;
+}
+
+/*
+ * Forms
+ */
+form {
+  margin: 0;
+  padding: 0;  
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 0.5em;
+}
+
+/*-------------------------
+----------mixins-----------
+-------------------------*/
+
+.custom-button {
+  text-align: center;
+  color: white;
+  font: 0.8em Verdana, sans-serif;
+  font-weight: normal;
+  padding:4px 15px;
+  background:url(images/overlay.png) repeat-x center #9c9b85;
+  background-color:#9c9b85;
+  border:1px solid #a7a68d;
+  .border-radius(8px);
+  *behavior: none;
+  -moz-box-shadow:inset 0 1px 0 rgba(155,155,155,0.5);
+  -webkit-box-shadow:inset 0 1px 0 rgba(155,155,155,0.5);
+  box-shadow:inset 0 1px 0 rgba(155,155,155,0.5);
+  cursor:pointer;
+  display: inline-block;
+}
+
+.custom-button-hover{background-color:#9c9b85; color: #416884;}
+
+.custom-button-active{position:relative; top: 1px;}
+
+.shadow {
+  text-shadow: #8e8d72 1px 0px 0px;
+}
+
+/*-------------------------
+-----------Main------------
+-------------------------*/
+
+#page-wrapper {
+  background-image: url('images/pagewrapper-bg.jpg');
+  background-repeat: repeat-x;
+}
+
+#page {
+  font-family: "Century Gothic", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  text-align: left;
+  color: @grey;
+}
+
+#main-wrapper-inner {
+  background: url('images/main-inner-bg.jpg') repeat-x 0 0 white;
+  border: 1px solid #b8b7ad;
+  .border-radius(10px);
+  margin: 20px auto 30px;
+  padding: 15px 0 0;
+}
+
+/*-------------------------
+--------typography---------
+-------------------------*/
+
+H1 {
+  font-family: "Century Gothic", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  color: #454444;
+  font-weight: normal;
+}
+H2 {
+  font-family: "Century Gothic", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  color: #18598f;
+  font-weight: bold;
+}
+H3 {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  color: #18598f;
+  font-weight: normal;
+}
+H4 {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  color: #454444;
+  font-weight: normal;
+}
+H5 {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  color: #454444;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  color: #61605f;
+}
+
+ul {
+  list-style: none outside url('images/li-bg.png');
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  color: #61605f;
+  li {
+  }
+}
+
+ol {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  color: #61605f;
+  li {
+  }
+}
+
+.node-type-webform {
+  .content {
+    p { 
+    }
+    form {
+      .webform-component {
+        .form-item {
+          label {
+            .form-required {
+              color: #18598f;
+            }
+          }
+          input.form-text, textarea {
+          }
+          input.form-text {
+          }
+        }
+      }
+      .form-actions {    	
+        input.form-submit {
+          .custom-button;
+          :hover {
+            .custom-button-hover;
+          }
+          :active {
+            .custom-button-active;
+          }
+        }
+      }
+    }
+  }
+}
+a:link {color: @link;}
+a:visited {color: @link_visited;}
+a:hover {color: @link_hover;}
+
+/*-------------------------
+-----------Header---------
+-------------------------*/
+
+#header {
+  padding: 0px 0 0 0;
+  display: table;
+  height: 140px;
+  overflow: hidden:
+}
+
+.header-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+#logo {
+  display: inline;
+  margin:0px 10px 0 0;
+  padding-left: 20px;
+  vertical-align: middle;
+  img {vertical-align: middle;}
+}
+
+#site-name, div#site-name, h1#site-name {
+  position:relative;
+  vertical-align: middle;
+  display: inline;
+  a:link{color:white;}
+  a:visited{color:white;}
+}
+
+#site-meta {
+  text-align: right;
+  color: white;
+  a{color:white; text-decoration:none;}
+  a:visited{color:white; text-decoration:none;}
+}
+
+#header-phone {
+  text-align:right;
+  font-size: 1.6em; 
+}
+
+#site-link{
+  text-align:right;
+}
+
+#site-slogan {
+  text-align:right;
+  font-size: 1.2em;
+}
+
+
+#name-and-logo,
+#site-meta {
+  display: inline;
+  vertical-align: middle;
+}
+
+/*-------------------------
+-----Featured Content------
+-------------------------*/
+
+#featured-wrapper {
+  #featured-content{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    .featured-content-inner {
+      .featured-left {  
+        .featured-left-wrapper {
+          padding: 10px 10px 6px 10px;
+          margin-right: -20px;
+          background: white;
+          .box-shadow(2px, 2px, 15px, rgba(0,0,0,0.4));
+          .border-radius;
+          .featured-text {
+            h2.title {
+            }
+            p {
+            }
+          }
+          .hero-shot-wrapper {
+            img {
+            }
+          }
+        }
+      }
+      .featured-right {
+        .featured-right-wrapper {
+          padding: 5px 0 10px 10px;
+          margin: 0px 0 0 20px;
+          background: url('images/featured-right-bg.jpg') no-repeat top left #3b6181;
+          color: white;
+          width: 330px;
+          .border-radius;
+          .box-shadow(2px, 2px, 15px, rgba(0,0,0,0.4));
+          .featured-text {
+            h2.title {
+              color: white;	
+            }
+            p {
+              color: white;
+            }
+          }
+          .node-type-webform {
+            width: 340px;
+            h2.title {
+              color: white;
+            }
+            .content {
+              p {
+                font-weight: normal;
+                font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+                color: white;
+              }
+              form {
+                font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+                .webform-component {
+                  .form-item {
+                    label {
+                      margin-left: 5px;
+                      font-weight: normal;
+                      .form-required {
+                        color: white;
+                      }
+                    }
+                    input.form-text {
+                      color: white;
+                      .border-radius(3px);
+                      background: #416481;
+                      border: 1px solid #385f7e;
+                      border-bottom: 1px solid #517898;
+                      height: 20px;
+                      width: 195px;
+                    }
+                    textarea {
+                      color: white;
+                      height: 70px;
+                      .border-radius(3px);
+                      background: #416481;
+                      border: 1px solid #385f7e;
+                      border-bottom: 1px solid #517898;
+                      width: 195px;
+                    }
+                  }
+                }
+                .form-actions {    	
+                  input.form-submit {
+                    margin-right: 20px;
+                    .custom-button;
+                    :hover {
+                      .custom-button-hover;
+                    }
+                    :active {
+                      .custom-button-active;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-------------------------
+-------Main Content--------
+-------------------------*/
+#main {
+  #content .section {
+    padding-left: 10px;
+    img {
+      .border-radius;
+      background-color: white;
+      border: 1px solid #dbdbd9;
+      padding: 5px;
+    }
+    h1.title {
+      font-family: "Century Gothic", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+      position:relative;
+      color:#454444;
+      padding: 0px 12px 3px 0px;
+      margin: 0;
+      font-weight: 400;
+      font-size: 1.8em;
+      line-height: normal;
+    }
+    .field-field-page-subtitle {
+      position:relative;
+      padding: 0px 12px 0px 0px;
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      line-height: normal;
+      color:@blue;
+      font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    }
+    .node-type-page  {
+      position:relative;
+      font-size:1em;
+      line-height: 1.4em;
+      padding: 0px 0px 0 0px;
+      margin: 10px 0 0 0px;
+      border-top: 1px solid #d0d1cd;
+      font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    }
+  }
+}
+
+/*-------------------------------------*/
+/*Sidebars*/
+/*-------------------------------------*/
+
+/*-------------Promos------------------*/
+
+#sidebar-first, #sidebar_second {
+  #block-scm_promotions_d6-0 {
+    .content {
+      .promotion {
+        border-top: 1px solid #d0d1cd;
+        margin: 15px 0 0px;
+        padding-top: 15px;
+        .promotion-image{
+          .border-radius;
+          background-color: white;
+          border: 1px solid #dbdbd9;
+          img {
+            padding:5px;
+          }
+        }
+        .promotion-content {
+          h3.promotion-title {
+            font-size: 1.3em;
+            color: @blue;
+            font-weight: bold;
+            margin: 0 0 5px;
+          }
+          .promotion-body {
+            p {
+              color: @grey;
+              font-size: 0.85em;
+              line-height: 1.4em;
+              font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+            }
+          }
+        }
+      }
+      .promotion:first-child {
+        border-top: 0px solid white;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/*-------------Webforms----------------*/
+
+#sidebar-first, #sidebar_second {
+  .region-sidebar-first, .region-sidebar-second {
+    .section {
+      .block-webform {
+        font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+        h2.title {
+          font-family: "Century Gothic", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+          font-weight: bold;
+          color: #18598f;
+        }
+        .content {
+          form {
+            .webform-component {
+              .form-item {
+                label {
+                  .form-required {
+                    color: #18598f;
+                  }
+                }
+                input.form-text, textarea {
+                  background: white;
+                }
+              }
+            }
+            .form-actions {    	
+              input.form-submit {
+                .custom-button;
+                :hover {
+                  .custom-button-hover;
+                }
+                :active {
+                  .custom-button-active;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-------------------------
+-----------Footer---------
+-------------------------*/
+
+#footer-message, #credits {
+  color: #575750;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding-right: 12px;	
+}
+
+#footer-wrapper {
+  background: url('images/footer-bg.jpg') 0 0 repeat-x #e1e0d9;
+}
+
+#footer {
+  color: #575750;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding-top: 10px;
+  a:link {color: #575750;}
+  a:visited {color: #575750;}
+}
+
+#address_raw, #phone {
+  padding-left: 12px;
+}
+
+/*-------------------------
+--_-----Primary Nav--------
+-------------------------*/
+
+ul#nice-menu-0,
+ul#nice-menu-0 ul,
+ul#nice-menu-0 li {
+  background: none;
+}
+
+#primary-navigation ul.nice-menu {
+  margin-left: 15px;
+  background-image: none;
+  li.active-trail {   
+    a:link, a:visited {
+      text-decoration: underline;
+    }
+    a.active {
+      text-decoration: underline;
+    }
+    li {
+      a:link, a:visited {
+        text-decoration: none;
+      }
+    }  
+  }
+  li {
+    border: 0;
+    list-style: none;
+    font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 10px;
+    .border-radius;
+    a, a:visited {
+      padding: 7px 15px 10px;
+      color: white;
+      text-decoration: none;
+      .border-radius;
+    }
+    a:hover {
+      color: white;
+      padding-top: 7px;
+    }
+    a.active {
+      text-decoration: underline;
+    }
+    :hover {
+      .border-radius;
+      background-color: #3d6383;
+    }
+    ul {
+      border: 0px solid white;
+      .border-radius(0px 5px 5px);
+      position: absolute;
+      top: 2em;
+      background-color: #3d6383;
+      padding-bottom: 10px;
+      li {
+        font-size: 12px;
+        border-bottom: 1px solid #4f7595;
+        color: white;
+        margin-right: 0px;
+        ul {
+          top: 0.25em;
+          padding-bottom: 0;
+          .border-radius(0px);
+          position: absolute;
+          li {
+            top: 0;
+            margin-top:0;
+          }
+        }
+        a, a:visited {
+          color: white;
+          font-weight: normal;
+        }
+        a:hover {
+          background: #4f7595;  
+          text-decoration: none;
+          border: none;
+          .border-radius(0px);
+          padding-top: 7px;
+          padding-bottom: 10px;
+        }
+        :hover {
+          .border-radius(0px);
+          background-color: #4f7595;
+        }
+      }
+      li.active-trail {   
+        background-color: #4f7595;
+        li {
+          background-color: #3d6383;
+        } 
+      }
+      li.first {
+        a:hover {
+          .border-radius(0 5px 0);
+        }
+        :hover {
+          .border-radius(0 5px 0);              
+        }
+      }
+    }
+  }
+}
+
+/*-------------------------
+------Secondary Nav--------
+-------------------------*/
+
+#sidebar_second {
+  ul.menu {
+    list-style-type: none;
+    border: 1px solid #cccccc;
+    .border-radius;
+    background-color: #eeeee9;
+    padding: 15px 0 15px 20px;
+    li {
+      list-style-type: none;
+      padding: 5px 0;
+      border: none;
+      a {
+        font-size: 16px;
+      }
+      a, a:visited {
+        color: @secondary_menu_main;
+        text-decoration: none;
+      }
+      a:hover {
+        color: @secondary_menu_hover;
+        text-decoration: underline;
+      }
+      a.active { 
+        color: @secondary_menu_hover;
+        text-decoration: underline;
+      }
+      :hover {
+      }
+      li.last {
+        border: none;
+      }
+      ul {
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none;
+        li {
+          .expanded {
+            border: none;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+        ul {
+          li {
+            a {
+              font-size: 12px;
+            }
+          }      
+        }      
+      }
+      .expanded {
+        border: none;
+      }
+    }
+  }
+}
+
+li.leaf {
+  list-style: none;
+}
+
+li.collapsed {
+  list-style-image: url('images/menu-collapsed.png');
+}
+
+li.expanded {
+  list-style-image: url('images/menu-expanded.png');
+  border: none;
+}
+
+
+
+
+
+.vertical-tabs-list {
+  li {
+    background:;
+  }
+  li.selected {
+    a:link, a:visited {
+      color: white !important;
+    }
+  }
+}
+
+
+div.block.with-block-editing div.edit {
+  padding: 5px;
+}
+
+
+tr.even, tr.odd {
+  border-bottom:1px solid #CCCCCC;
+  padding: 0.1em 10px;
+}
+
+#modalContent {
+  a:link, a:visited {
+    color: white;
+  }
+}
+
+
+/*-------------------------
+-------Front Styles--------
+-------------------------*/
+
+.node-type-page .field-field-image img {
+  .box-shadow(2px, 2px, 15px, rgba(0,0,0,0.4));
+  .border-radius;
+  background: white;
+  padding: 10px;
+}
