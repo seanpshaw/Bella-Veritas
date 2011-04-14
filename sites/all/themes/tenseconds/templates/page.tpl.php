@@ -117,19 +117,20 @@
 	  <?php if ($footer || $footer_message || $secondary_links || $address_raw || $credits): ?>
 	    <div id="footer-wrapper">	
 				<div id="footer" class="container-16 clearfix clear">
+				  <div id="footer-inner">
 
-		  		<div class="grid-6 prefix-1 footer-left">
-    	      <?php if ($logo): ?>
-    	          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-    	      <?php endif; ?>		  		
-    	    </div>
+  		  		<div class="grid-6 prefix-1 footer-left">
+      	      <?php if ($logo): ?>
+      	          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+      	      <?php endif; ?>		  		
+      	    </div>
 
-		  		<div class="grid-9 footer-right">
-		        <div id="credits"></div>
-		  		</div>
+  		  		<div class="grid-9 footer-right">
+  		        <div id="credits"></div>
+  		  		</div>
 
-		      <?php // print $footer; ?>
-
+  		      <?php // print $footer; ?>
+          </div> <!-- /#footer-inner -->
 		    </div> <!-- /#footer -->
 		  </div> <!-- /#footer-wrapper -->
 	  <?php endif; ?>
