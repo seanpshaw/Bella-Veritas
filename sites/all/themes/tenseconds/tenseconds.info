@@ -2,18 +2,16 @@
 
 ; The name and description of the theme used on the admin/build/themes page.
 name        = 10 Seconds (Drupal 6)
-description = The prime.
-demo_url = http://tenseconds.scmdigital.com
-tags[] = 'uncategorized'
+description = A custom theme for 10 Seconds the movie.
 
 ; there are two options for imagecache 'actions' below:
 ; 1) imagecache_scale_and_crop: this action will ALWAYS output an image that is the specified dimensions and will crop the original as needed
 ; 2) imagecache_scale: this action will maintain an image's original proportions and scale it to fit within the given dimensions
 
-theme_imagecache[hero_shot] = "imagecache_scale_and_crop:580x320"
-theme_imagecache[promotion_image_1] = "imagecache_scale_and_crop:250x150"
-theme_imagecache[promotion_image_2] = "imagecache_scale_and_crop:250x150"
-theme_imagecache[promotion_image_3] = "imagecache_scale_and_crop:250x150"
+; theme_imagecache[hero_shot] = "imagecache_scale_and_crop:580x320"
+; theme_imagecache[promotion_image_1] = "imagecache_scale_and_crop:250x150"
+; theme_imagecache[promotion_image_2] = "imagecache_scale_and_crop:250x150"
+; theme_imagecache[promotion_image_3] = "imagecache_scale_and_crop:250x150"
 
 ;;;;;;;;; DO NOT MODIFY ANY LINES BELOW THIS ONE ;;;;;;;;;
 
@@ -32,6 +30,7 @@ version		 =	6.x-0.1
 
 base theme = bella_starter
 
+stylesheets[all][]   = typography.css
 stylesheets[all][]   = styles.css
 
 ; Set the conditional stylesheets that are processed by IE.

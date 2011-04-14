@@ -22,46 +22,6 @@
 
   <div id="page-wrapper">
 	<div id="page" class=""><div id="page-inner" class="clearfix">
-  
-    <div id="header-wrapper">
-			<div id="header" class="container-16 clearfix"><div class="header-inner clearfix"><div class="section clearfix column">
-				<div id="name-and-logo" class="column grid-9 alpha">
-	      <?php if ($logo): ?>
-	          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-	      <?php endif; ?>
-
-	      <?php if ($site_name): ?>
-	          <?php if ($title): ?>
-	            <div id="site-name">
-	              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-	            </div>
-	          <?php else: /* Use h1 when the content title is empty */ ?>
-	            <h1 id="site-name">
-	              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-	            </h1>
-	          <?php endif; ?>
-	      <?php endif; ?>
-				</div>
-	      <div id="site-meta" class="clearfix column grid-7 omega">
-	        <?php if ($site_slogan): ?>
-	          <div id="site-slogan" class=""><?php print $site_slogan; ?></div>
-	        <?php endif; ?>
-
-
-	        <?php if ($phone): ?>
-	          <div id="header-phone" class=""><?php print $phone; ?></div>
-	        <?php endif; ?>
-
-	        <?php if ($link): ?>
-	          <?php print $link; ?>
-	        <?php endif; ?>
-	      </div>
-
-	      <?php print $header; ?>
-
-	    </div>
-    
-    </div></div></div> <!-- /.section, /#header, /#header-wrapper  -->
 
 			<?php if($primary_links){ ?>      
         <div id="primary-navigation-wrapper">
