@@ -127,13 +127,16 @@ ol li p { font-size: 0.9em; }
 }
 #primary-navigation-wrapper #primary-navigation ul li.menu-123 a:hover { background: url('images/nav-sprite.png') no-repeat -810px -38px; }
 #primary-navigation-wrapper #primary-navigation ul li.menu-123 a.active { background: url('images/nav-sprite.png') no-repeat -810px -79px; }
-#footer {
-  padding-top: 5px;
-  padding-bottom: 15px;
+#footer-wrapper {
+  background: url('images/footer-wrapper.png') repeat 0 0;
+  height: 120px;
 }
-.footer-center { text-align: center; }
-.footer-right { text-align: right; }
-.footer-left { text-align: left; }
+#footer-wrapper #footer { padding-top: 15px; }
+#footer-wrapper #footer .footer-left { padding-top: 8px; }
+#footer-wrapper #footer #credits {
+  background: url('images/credits.png') no-repeat 0 0;
+  height: 98px;
+}
 .clearfix:after {
   visibility: hidden;
   display: block;

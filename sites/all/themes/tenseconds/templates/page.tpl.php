@@ -117,29 +117,15 @@
 	  <?php if ($footer || $footer_message || $secondary_links || $address_raw || $credits): ?>
 	    <div id="footer-wrapper">	
 				<div id="footer" class="container-16 clearfix clear">
-		      <?php if ($primary_links || $navigation): ?>
-		        <div id="navigation"><div class="section clearfix">
-		          <?php if($primary_links){
-		            print $regular_primary_links; 
-		          }?>
-		          <?php print $navigation; ?>
 
-		        </div></div> <!-- /.section, /#navigation -->
-		      <?php endif; ?>
+		  		<div class="grid-6 prefix-1 footer-left">
+    	      <?php if ($logo): ?>
+    	          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+    	      <?php endif; ?>		  		
+    	    </div>
 
-		      <?php if($secondary_links){
-		        print $regular_secondary_links; 
-		      }?>
-		  		<div class="grid-8 footer-left">
-		  			<div id="address_raw"><?php print $address_raw; ?></div>
-		        <div id="phone"><?php print $phone; ?></div>
-		  		</div>
-
-		  		<div class="grid-8 footer-right">
-		  			<?php if ($footer_message): ?>
-		          <div id="footer-message"><?php print $footer_message; ?></div>
-		        <?php endif; ?>
-		        <div id="credits"><?php print $credits; ?></div>
+		  		<div class="grid-9 footer-right">
+		        <div id="credits"></div>
 		  		</div>
 
 		      <?php // print $footer; ?>
