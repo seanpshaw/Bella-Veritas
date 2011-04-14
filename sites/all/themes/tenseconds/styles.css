@@ -41,41 +41,92 @@ ol li p { font-size: 0.9em; }
 #primary-navigation-wrapper #primary-navigation ul { margin: 0; }
 #primary-navigation-wrapper #primary-navigation ul li {
   margin: 0;
+  padding: 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li a:link {
   height: 40px;
   display: block;
   text-indent: -5000px;
   float: left;
-  padding: 0;
   cursor: pointer;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-111 {
+#primary-navigation-wrapper #primary-navigation ul li a:visited {
+  height: 40px;
+  display: block;
+  text-indent: -5000px;
+  float: left;
+  cursor: pointer;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-111 a:link {
   background: url('images/nav-sprite.png') no-repeat 0 0;
   width: 100px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-118 {
+#primary-navigation-wrapper #primary-navigation ul li.menu-111 a:visited {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-111 a:hover { background: url('images/nav-sprite.png') no-repeat 0 -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-111 a.active { background: url('images/nav-sprite.png') no-repeat 0 -79px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:link {
   width: 110px;
   background: url('images/nav-sprite.png') no-repeat -100px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-119 {
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:visited {
+  width: 110px;
+  background: url('images/nav-sprite.png') no-repeat -100px 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:hover { background: url('images/nav-sprite.png') no-repeat -100px -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a.active { background: url('images/nav-sprite.png') no-repeat -100px -79px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-119 a:link {
   width: 120px;
   background: url('images/nav-sprite.png') no-repeat -210px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-120 {
+#primary-navigation-wrapper #primary-navigation ul li.menu-119 a:visited {
+  width: 120px;
+  background: url('images/nav-sprite.png') no-repeat -210px 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-119 a:hover { background: url('images/nav-sprite.png') no-repeat -210px -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-119 a.active { background: url('images/nav-sprite.png') no-repeat -210px -79px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:link {
   width: 110px;
   background: url('images/nav-sprite.png') no-repeat -330px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-121 {
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:visited {
+  width: 110px;
+  background: url('images/nav-sprite.png') no-repeat -330px 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:hover { background: url('images/nav-sprite.png') no-repeat -330px -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a.active { background: url('images/nav-sprite.png') no-repeat -330px -79px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:link {
   width: 250px;
   background: url('images/nav-sprite.png') no-repeat -440px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-122 {
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:visited {
+  width: 250px;
+  background: url('images/nav-sprite.png') no-repeat -440px 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:hover { background: url('images/nav-sprite.png') no-repeat -440px -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a.active { background: url('images/nav-sprite.png') no-repeat -440px -79px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:link {
   width: 130px;
   background: url('images/nav-sprite.png') no-repeat -690px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-123 {
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:visited {
+  width: 130px;
+  background: url('images/nav-sprite.png') no-repeat -690px 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:hover { background: url('images/nav-sprite.png') no-repeat -690px -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a.active { background: url('images/nav-sprite.png') no-repeat -690px -79px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:link {
   width: 120px;
   background: url('images/nav-sprite.png') no-repeat -810px 0;
 }
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:visited {
+  width: 120px;
+  background: url('images/nav-sprite.png') no-repeat -810px 0;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:hover { background: url('images/nav-sprite.png') no-repeat -810px -38px; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a.active { background: url('images/nav-sprite.png') no-repeat -810px -79px; }
 #footer {
   padding-top: 5px;
   padding-bottom: 15px;
