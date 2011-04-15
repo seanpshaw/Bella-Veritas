@@ -1,0 +1,4 @@
+.page-synopsis #main h1.title {
+  width: 100px;
+  background: url('images/synopsis-header.png') no-repeat 0 0;
+}

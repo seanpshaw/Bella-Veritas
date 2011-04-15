@@ -95,7 +95,15 @@
 }
 #primary-navigation-wrapper #primary-navigation ul li.menu-122 a:hover { background: url('images/nav-sprite.png') no-repeat -810px -38px; }
 #primary-navigation-wrapper #primary-navigation ul li.menu-122 a.active { background: url('images/nav-sprite.png') no-repeat -810px -79px; }
-#main-wrapper #main { width: 460px; }
+#main-wrapper #main {
+  width: 460px;
+  padding-top: 50px;
+}
+#main-wrapper #main h1.title {
+  display: block;
+  text-indent: -5000px;
+  height: 45px;
+}
 #footer-wrapper {
   background: url('images/footer-wrapper.png') repeat 0 0;
   height: 120px;
