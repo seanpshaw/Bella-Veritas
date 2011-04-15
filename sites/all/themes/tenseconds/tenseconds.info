@@ -30,9 +30,9 @@ version		 =	6.x-0.1
 
 base theme = bella_starter
 
-stylesheets[all][]   = pages.css
 stylesheets[all][]   = typography.css
 stylesheets[all][]   = styles.css
+stylesheets[all][]   = pages.css
 
 ; Set the conditional stylesheets that are processed by IE.
 conditional-stylesheets[if IE][all][]       = css/ie.css
