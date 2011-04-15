@@ -24,39 +24,6 @@ function tenseconds_settings($saved_settings) {
   //    */
     $form = array();
     $form += bella_starter_settings($settings);
-    
-    
-    $options = array(
-          'triangles' => 'Triangles',  
-  			  'brownstone' => 'Brownstone',
-  			  'charcoal' => 'Charcoal',
-  			  'columns' => 'Columns',
-          'glossy' => 'Glossy',
-          'handyman' => 'Handyman',        
-          'industrial' => 'Industrial' ,        
-          'steel' => 'Steel',
-          'landscaped' => 'Landscaped',
-          'metal' => 'Metal',
-          'minimalist' => 'Minimalist',
-          'ornate' => 'Ornate',
-          'pastel' => 'Pastel',
-          'paint_splatter' => 'Paint Splatter',
-          'professional' => 'Professional',
-          'scrapbook' => 'Scrapbook',
-          'stethoscope' => 'Stethoscope',
-          'summer_grass' => 'Summer Grass',
-					'politic' => 'Politic',
-					'adorned' => 'Adorned',
-					'sunset' => 'Sunset',
-    );
-    ksort($options);
-    
-  $form['theme']['color_style'] = array(
-      '#type' => 'select',
-      '#title' => t('Default Color Style'),
-   '#options' => $options,
-  '#default_value' => $saved_settings['color_style'],
-    );
   
   // Add the base theme's settings.
 
