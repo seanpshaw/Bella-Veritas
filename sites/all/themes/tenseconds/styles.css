@@ -114,7 +114,6 @@
   background: url('images/credits.png') no-repeat 0 0;
   height: 98px;
 }
-.page-partners #page { background: url('images/partners-bg.png') no-repeat 80% 100%; }
 .clearfix:after {
   visibility: hidden;
   display: block;
