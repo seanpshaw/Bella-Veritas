@@ -30,6 +30,7 @@ version		 =	6.x-0.1
 
 base theme = bella_starter
 
+stylesheets[all][]   = pages.css
 stylesheets[all][]   = typography.css
 stylesheets[all][]   = styles.css
 
