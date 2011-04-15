@@ -4,6 +4,11 @@
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
 .page-cast-and-crew #main h1.title {
-  width: 100px;
+  width: 130px;
   background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-sex-addiction-and-trafficking #page { background: url('images/trafficking-bg.jpg') no-repeat 80% 100%; }
+.page-sex-addiction-and-trafficking #main h1.title {
+  width: 230px;
+  background: url('images/trafficking-header.png') no-repeat 0 0;
 }
