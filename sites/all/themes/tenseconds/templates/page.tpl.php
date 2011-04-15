@@ -32,17 +32,6 @@
     			</div>
     		</div>
 	    <?php } ?>
-      
-      
-    <?php if ($featured_content): ?>    
-      <div id="featured-wrapper" class="" >
-        <div id="featured-content" class="container-16 clearfix">
-		  <div class="featured-content-inner clearfix">	
-            <?php print $featured_content; ?>
-		  </div>
-        </div>
-      </div>
-    <?php endif; ?>
 
     <div id="main-wrapper" class="" >
       <div id="main-wrapper-inner" class="container-16 clearfix">
