@@ -4,6 +4,7 @@
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
+.page-cast-and-crew #page { background: url('images/cast-and-crew-bg.jpg') no-repeat 83% 100%; }
 .page-cast-and-crew #main h1.title {
   width: 130px;
   background: url('images/cast-and-crew-header.png') no-repeat 0 0;
