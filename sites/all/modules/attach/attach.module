@@ -1,0 +1,259 @@
+<?php
+
+/**
+ * @file attach.module
+ *
+ * A filter allow user to embed everything attach with a simple tag.
+ *
+ * The purpose is to provide a "light" presentation, and link to heavy content
+ * (ie., with attach_node, then link to full node view, with attach_flash or
+ * attach_audio, then link to a lightbox style popup...)
+ *
+ * This module and its syntax is extensible.
+ *
+ * Syntax:
+ *   - Node attach: [attach_node|nid=%nid|...]
+ *   - Flash attach: [attach_flv|file=%url|...]
+ *   - ...
+ * An array of parameters are available. For example:
+ *   [attach_node|nid=12|title=This title overrides the node title]
+ *   [attach_flv|file=sites/default/files/movie.flv|title=My movie|width=500|height=300]
+ *
+ * You can customize the output by making your own attach-node-NODETYPE.tpl.php
+ * or attach-flash.tpl.php... within your theme or your module.
+ */
+
+/**
+ * Implementation of hook_init().
+ */
+function attach_init() {
+  drupal_add_css(drupal_get_path('module', 'attach') .'/attach.css');
+}
+
+/**
+ * Implementation of hook_filter().
+ */
+function attach_filter($op, $delta = 0, $format = -1, $text = '', $cache_id = 0) {
+  switch ($op) {
+    case 'list':
+      return array(0 => t('Attach filter'));
+
+    case 'description':
+      return t('Attach data inside a node content.');
+
+    case 'settings':
+      return attach_settings_form($format);
+
+    case 'process':
+      attach_filter_process(NULL, $format);
+      return preg_replace_callback('/\[attach_([a-z0-9]+)\|(.+?)\]/s', 'attach_filter_process', $text);
+
+    case 'no cache':
+      return FALSE;
+
+    default:
+      return $text;
+  }
+}
+
+/**
+ * Implementation of hook_preprocess_node().
+ */
+function attach_preprocess_node(&$vars) {
+  if ($vars['attach']) {
+    $vars['template_files'][] = 'attach-node-default';
+    $vars['template_files'][] = 'attach-node-' . $vars['type'];
+  }
+}
+
+/**
+ * Implementation of hook_theme_registry_alter().
+ */  
+function attach_theme_registry_alter(&$theme_registry) {
+  // Put the themes folder at the lowest priority so that themes can override it
+  array_unshift($theme_registry['node']['theme paths'], drupal_get_path('module', 'attach') .'/themes');
+}
+
+/**
+ * The form for configuring the attach Filter.
+ */
+function attach_settings_form($format) {
+  $form = array();
+
+  $form['attach_filter'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Choose which plugins are enabled in attach filter'),
+  );
+
+  $plugins = attach_get_plugins();
+  foreach ($plugins as $key => $settings) {
+    $form['attach_filter']['attach_'. $key .'_'. $format] = array(
+      '#type' => 'checkbox',
+      '#title' => t($settings['title']),
+      '#description' => t($settings['description']),
+      '#default_value' => variable_get('attach_'. $key .'_'. $format, TRUE),
+    );
+  }
+
+  return $form;
+}
+
+/**
+ * Processes the attach filter replacement.
+ *
+ * Use attach_filter_process(NULL, $format) to define the input format.
+ */
+function attach_filter_process($matches, $flag = NULL) {
+  static $format = -1;
+
+  if ($flag) {
+    $format = $flag;
+    if (! $matches) return;
+  }
+
+  $inputs = explode('|', $matches[2]);
+  
+  foreach ($inputs as $input) {
+    // if no match, or "=" at the begin, continue
+    if (!$pos = strpos($input, '=')) {
+      continue;
+    }
+    $params[preg_replace('/[^a-zA-Z0-9\-_]/', '', substr($input, 0, $pos))] = substr($input, $pos+1);
+  }
+  $params += array(
+    'suffix' => strtolower($matches[1]),
+    'simple' => 0,
+  );
+
+  $plugins = attach_get_plugins();
+  foreach ($plugins as $key => $settings) {
+    if (in_array($params['suffix'], $settings['suffixes'])) {
+      // If this plugin is disable, returns the original text
+      if (!variable_get('attach_'. $key .'_'. $format, TRUE)) {
+        return $matches[0];
+      }
+
+      // Else, does the filter process
+      if (! $result = call_user_func($settings['callback'], $params)) {
+        $result = t('Error');
+      }
+
+      // Wrap with SPAN tag in simple mode and DIV tag in full mode
+      if ($params['simple']) {
+        $result = '<span class="attach-simple attach-'. $params['suffix'] .'">'. $result .'</span>';
+      }
+      else {
+        $result = '<div class="attach-wrapper attach-'. $params['suffix'] .'">'. $result .'</div>';
+      }
+
+      return $result;
+    }
+  }
+}
+
+/**
+ * Renders attachd node in teaser mode.
+ *
+ * This module is shipped with a minimal node template.
+ */
+function attach_node_process($params) {
+  if (($node = node_load((int)$params['nid'])) && ($node->status)) {
+    $params['default_title'] = empty($params['title']) ? $node->title : $params['title'];
+  
+    if ($params['simple']) {
+      return '<span class="attach-node-'. $node->type .'">'. l($params['default_title'], 'node/'. $node->nid) .'</span>';
+    }
+    else {
+      $node->attach = $params;
+      return node_view($node, TRUE);
+    }
+  }
+}
+
+/**
+ * Renders attachd user account.
+ *
+ * It reuses author_pane block if this module is enable. If not, a minimal info
+ * is displayed.
+ */
+function attach_user_process($params) {
+  if ($account = user_load((int)$params['uid'])) {
+    if ($params['simple']) {
+      $output = theme('username', $account);
+    }
+    else {
+      if (module_exists('author_pane')) {
+        $output = theme('author_pane', $account, 'attach', NULL, NULL, TRUE);
+      }
+      else {
+        $output = theme('username', $account);
+      }
+
+    }
+    return $output;
+  }
+}
+
+function attach_flash_process($params) {
+  // @todo: rewrite this function
+  if (! module_exists('fancybox')) return;
+
+  if ($params['suffix'] == 'audio') {
+    $params['width'] = 470;
+    $params['height'] = 24;
+  }
+  else {
+    $params['width'] = 500;
+    $params['height'] = 300;
+  }
+
+  if (! preg_match('#^http://#', $params['file'])) {
+    return;
+  }
+
+  $static_url = variable_get('static_url', $GLOBALS['base_url']);
+  if (empty($params['title'])) {
+    $params['title'] = t('Content');
+  }
+  $id = 'obj-'.substr(md5($params['file']), 0, 8);
+  return '<a id="'. $id .'" href="'. $static_url .'/sites/all/libraries/mediaplayer/player-viral.swf">'. $params['title'] .'</a><script type="text/javascript">$(document).ready(function() {$("#'. $id .'").fancybox({
+    type: \'swf\',
+    width: '. $params['width'] .',
+    height: '. $params['height'] .',
+    swf: {width: '. $params['width'] .', height: '. $params['height'] .', flashvars: \'file='. $static_url .'/files/'. $params['file'] .'&autostart=true&logo.hide=true\'}
+    });
+  });</script>';
+}
+
+/**
+ * Returns all implemented plugins
+ *
+ * @todo: this can be extended by a hook-like implementation
+ */
+function attach_get_plugins() {
+  $plugins = array(
+    'node' => array(
+      'title' => 'Attach node inline',
+      'description' => '',
+      'callback' => 'attach_node_process',
+      'options' => array(),
+      'suffixes' => array('node'),
+    ),
+    'user' => array(
+      'title' => 'Attach user profile inline',
+      'description' => '',
+      'callback' => 'attach_user_process',
+      'options' => array(),
+      'suffixes' => array('user'),
+    ),
+    'flash' => array(
+      'title' => 'Attach flash inline',
+      'description' => '',
+      'callback' => 'attach_flash_process',
+      'options' => array(),
+      'suffixes' => array('flv', 'swf'),
+    ),
+  );
+
+  return $plugins;
+}
