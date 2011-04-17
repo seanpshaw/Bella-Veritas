@@ -10,7 +10,7 @@
   background: url('images/cast-and-crew-header.png') no-repeat 0 0;
 }
 .page-gallery #page { background: url('images/gallery-bg.png') no-repeat 50% 100%; }
-.page-gallery #main h1.title {
+.page-gallery #main-wrapper #main h1.title {
   width: 130px;
   background: url('images/gallery-header.png') no-repeat 0 0;
 }
