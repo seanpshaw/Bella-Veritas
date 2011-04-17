@@ -51,3 +51,4 @@ ol li p { font-size: 0.9em; }
   float: left;
   width: 305px;
 }
+.list-header { margin-bottom: 0; }
