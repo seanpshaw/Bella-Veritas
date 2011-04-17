@@ -24,7 +24,7 @@
   width: 150px;
   background: url('images/partners-header.png') no-repeat 0 0;
 }
-.page-purchase #main { min-height: 800px; }
+.page-purchase #main { min-height: 480px; }
 .page-purchase #main h1.title {
   width: 145px;
   background: url('images/coming-soon-header.png') no-repeat 0 0;
