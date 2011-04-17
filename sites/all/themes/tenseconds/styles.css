@@ -104,6 +104,7 @@
   text-indent: -5000px;
   height: 45px;
 }
+#main-wrapper #main #content-area { background: url('images/trafficking-bg.png') no-repeat 0 0; }
 #footer-wrapper {
   background: url('images/footer-wrapper.png') repeat 0 0;
   height: 120px;
