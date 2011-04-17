@@ -41,8 +41,13 @@ ul { margin: 0.5em 0; }
 ul li p { font-size: 0.9em; }
 ol { margin: 0.5em 0; }
 ol li p { font-size: 0.9em; }
+#main #content-area ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+}
 #main #content-area ul li { font-size: 0.75em; }
-#behaviors-list-1, #behaviors-list-2 {
+.sa-list {
   float: left;
-  width: 230px;
+  width: 305px;
 }
