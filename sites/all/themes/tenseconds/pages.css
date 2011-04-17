@@ -10,13 +10,13 @@
   background: url('images/cast-and-crew-header.png') no-repeat 0 0;
 }
 .page-gallery #page { background: url('images/gallery-bg.png') no-repeat 50% 100%; }
-.page-gallery #main-wrapper #main h1.title {
+.page-gallery #main h1.title {
   width: 130px;
   background: url('images/gallery-header.png') no-repeat 0 0;
 }
 .page-sex-addiction-and-trafficking #page { background: url('images/trafficking-bg.jpg') no-repeat 83% 100%; }
-.page-sex-addiction-and-trafficking #main { width: 640px; }
-.page-sex-addiction-and-trafficking #main h1.title {
+.page-sex-addiction-and-trafficking #main-wrappe #main { width: 640px; }
+.page-sex-addiction-and-trafficking #main-wrappe #main h1.title {
   width: 265px;
   background: url('images/trafficking-header.png') no-repeat 0 0;
 }
