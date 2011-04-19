@@ -1,3 +1,5 @@
+@import "pie.less";
+
 .page-synopsis {
   #page {
     background: url('images/synopsis-bg.png') no-repeat 50% 100%;
@@ -33,7 +35,32 @@
       background: url('images/gallery-header.png') no-repeat 0 0;
     }
     #content-area {
-      
+      .node-type-gallery {
+        .meta {
+          display: none;
+        }
+        .view {
+          table {
+            tbody {
+              tr {
+                td {
+                  .views-field-field-image-fid {
+                    .views-label-field-image-fid {
+                      display: none;
+                    }
+                    .field-content {
+                      display: block;
+                      line-height: 0;
+                      .border-radius(5px);
+                      border: 5px solid #372424;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

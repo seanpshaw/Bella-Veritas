@@ -1,3 +1,7 @@
+.uses-pie {
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+}
 .page-synopsis #page { background: url('images/synopsis-bg.png') no-repeat 50% 100%; }
 .page-synopsis #main { padding-bottom: 260px; }
 .page-synopsis #main h1.title {
@@ -13,6 +17,18 @@
 .page-gallery #main h1.title {
   width: 130px;
   background: url('images/gallery-header.png') no-repeat 0 0;
+}
+.page-gallery #main #content-area .node-type-gallery .meta { display: none; }
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-field-image-fid .views-label-field-image-fid { display: none; }
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-field-image-fid .field-content {
+  display: block;
+  line-height: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+  border: 5px solid #372424;
 }
 .page-sex-addiction-and-trafficking #page { background: url('images/trafficking-bg.png') no-repeat 50% 100%; }
 .page-sex-addiction-and-trafficking #main-wrapper #main { width: 640px; }
