@@ -31,6 +31,8 @@
   position: relative;
   border: 5px solid #372424;
 }
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-body { display: none; }
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-title { display: none; }
 .page-gallery #main #content-area .node-type-gallery .view table tbody tr td.col-1 { padding-left: 0; }
 .page-sex-addiction-and-trafficking #page { background: url('images/trafficking-bg.png') no-repeat 50% 100%; }
 .page-sex-addiction-and-trafficking #main-wrapper #main { width: 640px; }
