@@ -40,11 +40,11 @@
   width: 265px;
   background: url('images/trafficking-header.png') no-repeat 0 0;
 }
-.page-partners #main { width: 940px; }
 .page-partners #main h1.title {
   width: 150px;
   background: url('images/partners-header.png') no-repeat 0 0;
 }
+.page-partners #main-wrapper #main { width: 940px; }
 .page-purchase #main { min-height: 480px; }
 .page-purchase #main h1.title {
   width: 145px;
