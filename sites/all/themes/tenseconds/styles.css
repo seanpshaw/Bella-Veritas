@@ -126,7 +126,7 @@
 #partners-left h2 {
   font-family: Helvetica, Arial, Tahoma, Sans-serif;
   color: #703137;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 #partners-left img {
   display: block;
@@ -139,6 +139,15 @@
   border: 3px solid #372424;
   margin-right: 5px;
 }
+#partners-left a:link {
+  color: #703137;
+  text-decoration: none;
+}
+#partners-left a:visited {
+  color: #703137;
+  text-decoration: none;
+}
+#partners-left a:hover { text-decoration: underline; }
 #partner-right {
   width: 460px;
   float: left;
@@ -147,7 +156,7 @@
 #partner-right h2 {
   font-family: Helvetica, Arial, Tahoma, Sans-serif;
   color: #703137;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 #partner-right img {
   display: block;
@@ -160,6 +169,15 @@
   border: 3px solid #372424;
   margin-right: 5px;
 }
+#partner-right a:link {
+  color: #703137;
+  text-decoration: none;
+}
+#partner-right a:visited {
+  color: #703137;
+  text-decoration: none;
+}
+#partner-right a:hover { text-decoration: underline; }
 .clearfix:after {
   visibility: hidden;
   display: block;
