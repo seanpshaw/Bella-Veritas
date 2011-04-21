@@ -138,6 +138,7 @@
   position: relative;
   border: 3px solid #372424;
   margin-right: 5px;
+  background: white;
 }
 #partners-left a:link {
   color: #703137;
@@ -168,6 +169,7 @@
   position: relative;
   border: 3px solid #372424;
   margin-right: 5px;
+  background: white;
 }
 #partner-right a:link {
   color: #703137;
