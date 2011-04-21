@@ -140,6 +140,7 @@
   border: 3px solid #372424;
   margin-right: 5px;
   background: white;
+  padding: 3px;
 }
 #partners-left a:link {
   color: #703137;
@@ -172,6 +173,7 @@
   border: 3px solid #372424;
   margin-right: 5px;
   background: white;
+  padding: 3px;
 }
 #partner-right a:link {
   color: #703137;
