@@ -151,7 +151,10 @@
   text-decoration: none;
 }
 #partners-left a:hover { text-decoration: underline; }
-#partners-left .partner-text { padding-left: 115px; }
+#partners-left .partner-text {
+  float: left;
+  width: 350px;
+}
 #partner-right {
   width: 460px;
   float: left;
@@ -185,7 +188,10 @@
   text-decoration: none;
 }
 #partner-right a:hover { text-decoration: underline; }
-#partner-right .partner-text { padding-left: 115px; }
+#partner-right .partner-text {
+  float: left;
+  width: 350px;
+}
 .clearfix:after {
   visibility: hidden;
   display: block;
