@@ -136,8 +136,8 @@
   border-radius: 5px;
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
-  border: 5px solid #372424;
-  margin-bottom: 10px;
+  border: 3px solid #372424;
+  margin-right: 5px;
 }
 #partner-right {
   width: 460px;
@@ -157,8 +157,8 @@
   border-radius: 5px;
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
-  border: 5px solid #372424;
-  margin-bottom: 10px;
+  border: 3px solid #372424;
+  margin-right: 5px;
 }
 .clearfix:after {
   visibility: hidden;
