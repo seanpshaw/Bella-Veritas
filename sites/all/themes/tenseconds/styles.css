@@ -151,7 +151,6 @@
   text-decoration: none;
 }
 #partners-left a:hover { text-decoration: underline; }
-#partners-left p { padding-left: 115px; }
 #partner-right {
   width: 460px;
   float: left;
@@ -185,7 +184,6 @@
   text-decoration: none;
 }
 #partner-right a:hover { text-decoration: underline; }
-#partner-right p { padding-left: 115px; }
 .clearfix:after {
   visibility: hidden;
   display: block;
