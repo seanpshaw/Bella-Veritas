@@ -133,12 +133,12 @@
   position: relative;
   border: 5px solid #372424;
 }
-#partners-right {
+#partner-right {
   width: 460px;
   float: left;
   margin-right: 10px;
 }
-#partners-right img {
+#partner-right img {
   display: block;
   line-height: 0;
   -moz-border-radius: 5px;
