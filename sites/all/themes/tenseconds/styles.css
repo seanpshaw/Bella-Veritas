@@ -152,8 +152,8 @@
 }
 #partners-left a:hover { text-decoration: underline; }
 #partners-left .partner-text {
-  padding-left: 115px;
-  margin-top: -15px;
+  padding-left: 130px;
+  margin-top: -30px;
 }
 #partner-right {
   width: 460px;
@@ -189,8 +189,8 @@
 }
 #partner-right a:hover { text-decoration: underline; }
 #partner-right .partner-text {
-  padding-left: 115px;
-  margin-top: -15px;
+  padding-left: 130px;
+  margin-top: -30px;
 }
 .clearfix:after {
   visibility: hidden;
