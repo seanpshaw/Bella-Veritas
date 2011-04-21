@@ -3,7 +3,7 @@
   position: relative;
 }
 .page-synopsis #page { background: url('images/synopsis-bg.png') no-repeat 50% 100%; }
-.page-synopsis #main { padding-bottom: 260px; }
+.page-synopsis #main { padding-bottom: 140px; }
 .page-synopsis #main h1.title {
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
