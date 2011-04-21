@@ -141,9 +141,6 @@
   margin-right: 5px;
   background: white;
   padding: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #partners-left a:link {
   color: #703137;
@@ -154,6 +151,10 @@
   text-decoration: none;
 }
 #partners-left a:hover { text-decoration: underline; }
+#partners-left .partner-text {
+  padding-left: 115px;
+  margin-top: -15px;
+}
 #partner-right {
   width: 460px;
   float: left;
@@ -177,9 +178,6 @@
   margin-right: 5px;
   background: white;
   padding: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #partner-right a:link {
   color: #703137;
@@ -190,6 +188,10 @@
   text-decoration: none;
 }
 #partner-right a:hover { text-decoration: underline; }
+#partner-right .partner-text {
+  padding-left: 115px;
+  margin-top: -15px;
+}
 .clearfix:after {
   visibility: hidden;
   display: block;
