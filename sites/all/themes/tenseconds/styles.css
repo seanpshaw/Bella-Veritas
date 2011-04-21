@@ -123,6 +123,11 @@
   float: left;
   margin-right: 10px;
 }
+#partners-left h2 {
+  font-family: Helvetica, Arial, Tahoma, Sans-serif;
+  color: #703137;
+  margin-bottom: 0;
+}
 #partners-left img {
   display: block;
   line-height: 0;
@@ -132,11 +137,17 @@
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
   border: 5px solid #372424;
+  margin-bottom: 10px;
 }
 #partner-right {
   width: 460px;
   float: left;
   margin-right: 10px;
+}
+#partner-right h2 {
+  font-family: Helvetica, Arial, Tahoma, Sans-serif;
+  color: #703137;
+  margin-bottom: 0;
 }
 #partner-right img {
   display: block;
@@ -147,6 +158,7 @@
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
   border: 5px solid #372424;
+  margin-bottom: 10px;
 }
 .clearfix:after {
   visibility: hidden;
