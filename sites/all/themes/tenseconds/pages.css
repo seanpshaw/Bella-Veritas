@@ -50,4 +50,7 @@
   width: 145px;
   background: url('images/coming-soon-header.png') no-repeat 0 0;
 }
+body.front #page { background: url('images/homepage-bg.png') no-repeat 50% 100%; }
+body.front #main { min-height: 500px; }
+body.front #main #content-area { display: none; }
 #cboxWrapper #cboxTitle { display: none !important; }
