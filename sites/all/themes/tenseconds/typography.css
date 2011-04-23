@@ -61,3 +61,5 @@ ol li p { font-size: 0.9em; }
 }
 .list-header { margin-bottom: 0; }
 .lists { width: 860px; }
+a:link { color: #703137; }
+a:visited { color: #703137; }
