@@ -8,49 +8,74 @@
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew .page-jessejames-locorriere #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-cast-and-crew .page-jessejames-locorriere #main { min-height: 400px; }
-.page-cast-and-crew .page-jessejames-locorriere #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-cast-and-crew .page-jessejames-locorriere #main {
+  min-height: 400px;
+  position: relative;
 }
-.page-amanda-bailey #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-amanda-bailey #main { min-height: 400px; }
-.page-amanda-bailey #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-cast-and-crew .page-jessejames-locorriere #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.page-claire-engler #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-claire-engler #main { min-height: 400px; }
-.page-claire-engler #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-amanda-bailey #main {
+  min-height: 400px;
+  position: relative;
 }
-.page-carrington-durham #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-carrington-durham #main { min-height: 400px; }
-.page-carrington-durham #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-amanda-bailey #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.page-christine-poythress #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-christine-poythress #main { min-height: 400px; }
-.page-christine-poythress #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-claire-engler #main {
+  min-height: 400px;
+  position: relative;
 }
-.page-aidan-mitchell #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-aidan-mitchell #main { min-height: 400px; }
-.page-aidan-mitchell #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-claire-engler #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.page-matt-coale #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-matt-coale #main { min-height: 400px; }
-.page-matt-coale #main h1.title {
-  width: 130px;
-  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+.page-carrington-durham #main {
+  min-height: 400px;
+  position: relative;
+}
+.page-carrington-durham #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.page-christine-poythress #main {
+  min-height: 400px;
+  position: relative;
+}
+.page-christine-poythress #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.page-aidan-mitchell #main {
+  min-height: 400px;
+  position: relative;
+}
+.page-aidan-mitchell #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.page-matt-coale #main {
+  min-height: 400px;
+  position: relative;
+}
+.page-matt-coale #main img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .page-jessejames-locorriere #main h1.title {
+  width: 130px;
+  background: url('images/jesse-header.png') no-repeat 0 0;
+}
+.page-cast-and-crew #main h1.title {
   width: 130px;
   background: url('images/jesse-header.png') no-repeat 0 0;
 }
