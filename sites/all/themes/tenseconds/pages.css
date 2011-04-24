@@ -158,6 +158,7 @@
   width: 300px;
   background: url('images/aidan-header.png') no-repeat 0 0;
 }
+.page-matt-coale #main { min-height: 375px; }
 .page-matt-coale #main h1.title {
   width: 300px;
   background: url('images/matt-header.png') no-repeat 0 0;
