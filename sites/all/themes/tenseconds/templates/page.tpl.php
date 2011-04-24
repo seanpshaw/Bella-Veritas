@@ -35,6 +35,7 @@
 
     <div id="main-wrapper" class="" >
       <div id="main-wrapper-inner" class="container-16 clearfix">
+        <?php print $content_top; ?>
          <div id="main" class="clearfix column <?php print ns('grid-16', $sidebar_first, 4, $sidebar_second, 6) . ' ' . ns('push-4', !$sidebar_first, 4); ?>">
 
           <div id="content" class="column"><div class="section">
@@ -54,8 +55,6 @@
               <div class="tabs"><?php print $tabs; ?></div>
             <?php endif; ?>
             <?php print $help; ?>
-
-            <?php print $content_top; ?>
       
             <div id="content-area">
               <?php print $content; ?>
