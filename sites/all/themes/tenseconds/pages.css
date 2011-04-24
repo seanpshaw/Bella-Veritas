@@ -8,8 +8,38 @@
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
-.page-cast-and-crew #main h1.title {
+.page-cast-and-crew .page-jessejames-locorriere #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-cast-and-crew .page-jessejames-locorriere #main h1.title {
+  width: 130px;
+  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-amanda-bailey #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-amanda-bailey #main h1.title {
+  width: 130px;
+  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-claire-engler #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-claire-engler #main h1.title {
+  width: 130px;
+  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-carrington-durham #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-carrington-durham #main h1.title {
+  width: 130px;
+  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-christine-poythress #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-christine-poythress #main h1.title {
+  width: 130px;
+  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-aidan-mitchell #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-aidan-mitchell #main h1.title {
+  width: 130px;
+  background: url('images/cast-and-crew-header.png') no-repeat 0 0;
+}
+.page-matt-coale #page { background: url('images/cast-and-crew-bg.png') no-repeat 50% 100%; }
+.page-matt-coale #main h1.title {
   width: 130px;
   background: url('images/cast-and-crew-header.png') no-repeat 0 0;
 }
