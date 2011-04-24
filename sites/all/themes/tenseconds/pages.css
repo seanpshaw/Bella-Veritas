@@ -8,11 +8,11 @@
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew .page-jessejames-locorriere #main {
+.page-cast-and-crew-page .page-jessejames-locorriere #main {
   min-height: 400px;
   position: relative;
 }
-.page-cast-and-crew .page-jessejames-locorriere #main img {
+.page-cast-and-crew-page .page-jessejames-locorriere #main img {
   position: absolute;
   top: 0;
   right: 0;
@@ -75,7 +75,7 @@
   width: 130px;
   background: url('images/jesse-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew #main h1.title {
+.page-cast-and-crew-page #main h1.title {
   width: 130px;
   background: url('images/jesse-header.png') no-repeat 0 0;
 }
