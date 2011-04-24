@@ -95,20 +95,23 @@
 }
 #primary-navigation-wrapper #primary-navigation ul li.menu-122 a:hover { background: url('images/nav-sprite.png') no-repeat -810px -38px; }
 #primary-navigation-wrapper #primary-navigation ul li.menu-122 a.active { background: url('images/nav-sprite.png') no-repeat -810px -79px; }
-#block-menu-secondary-links ul { margin: 0; }
+#block-menu-secondary-links ul {
+  margin: 0;
+  padding: 0;
+}
 #block-menu-secondary-links ul li {
   margin: 0;
   padding: 0;
 }
 #block-menu-secondary-links ul li a:link {
-  height: 40px;
+  height: 120px;
   display: block;
   text-indent: -5000px;
   float: left;
   cursor: pointer;
 }
 #block-menu-secondary-links ul li a:visited {
-  height: 40px;
+  height: 120px;
   display: block;
   text-indent: -5000px;
   float: left;
