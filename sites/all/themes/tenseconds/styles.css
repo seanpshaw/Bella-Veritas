@@ -95,6 +95,81 @@
 }
 #primary-navigation-wrapper #primary-navigation ul li.menu-122 a:hover { background: url('images/nav-sprite.png') no-repeat -810px -38px; }
 #primary-navigation-wrapper #primary-navigation ul li.menu-122 a.active { background: url('images/nav-sprite.png') no-repeat -810px -79px; }
+#block-menu-secondary-links ul { margin: 0; }
+#block-menu-secondary-links ul li {
+  margin: 0;
+  padding: 0;
+}
+#block-menu-secondary-links ul li a:link {
+  height: 40px;
+  display: block;
+  text-indent: -5000px;
+  float: left;
+  cursor: pointer;
+}
+#block-menu-secondary-links ul li a:visited {
+  height: 40px;
+  display: block;
+  text-indent: -5000px;
+  float: left;
+  cursor: pointer;
+}
+#block-menu-secondary-links ul li a:link[href="/jessejames-locorriere"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:visited[href="/jessejames-locorriere"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:link[href="/amanda-bailey"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:visited[href="/amanda-bailey"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:link[href="/claire-engler"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:visited[href="/claire-engler"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:link[href="/carrington-durham"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:visited[href="/carrington-durham"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:link[href="/christine-poythress"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:visited[href="/christine-poythress"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:link[href="/aidan-mitchell"] {
+  background: url('images/cast-nav-sprite.png') no-repeat 0 0;
+  width: 115px;
+}
+#block-menu-secondary-links ul li a:visited[href="/aidan-mitchell"] {
+  background: url('images/cast-nav-sprite.png') no-repeat 0 0;
+  width: 115px;
+}
+#block-menu-secondary-links ul li a:link[href="/matt-coale"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
+#block-menu-secondary-links ul li a:visited[href="/matt-coale"] {
+  background: url('images/nav-sprite.png') no-repeat 0 0;
+  width: 100px;
+}
 #main-wrapper #main {
   width: 460px;
   padding-top: 50px;
