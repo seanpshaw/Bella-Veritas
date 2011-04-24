@@ -13,72 +13,120 @@
   position: relative;
 }
 .page-cast-and-crew-page #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-jessejames-locorriere #main {
   min-height: 400px;
   position: relative;
 }
 .page-jessejames-locorriere #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-amanda-bailey #main {
   min-height: 400px;
   position: relative;
 }
 .page-amanda-bailey #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-claire-engler #main {
   min-height: 400px;
   position: relative;
 }
 .page-claire-engler #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-carrington-durham #main {
   min-height: 400px;
   position: relative;
 }
 .page-carrington-durham #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-christine-poythress #main {
   min-height: 400px;
   position: relative;
 }
 .page-christine-poythress #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-aidan-mitchell #main {
   min-height: 400px;
   position: relative;
 }
 .page-aidan-mitchell #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-matt-coale #main {
   min-height: 400px;
   position: relative;
 }
 .page-matt-coale #main img {
+  top: 65px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .page-jessejames-locorriere #main h1.title {
   width: 300px;
