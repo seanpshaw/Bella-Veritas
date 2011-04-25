@@ -232,6 +232,12 @@
   background: url('images/credits.png') no-repeat 0 0;
   height: 98px;
 }
+#footer-wrapper #footer-bottom { position: relative; }
+#footer-wrapper #footer-bottom #bella-logo {
+  position: absolute;
+  right: 356px;
+  top: -45px;
+}
 #partners-left {
   width: 460px;
   float: left;
