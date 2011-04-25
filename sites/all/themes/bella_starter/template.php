@@ -198,30 +198,15 @@ function bella_starter_preprocess_page(&$vars, $hook) {
       'class' => 'element-invisible',
     ));
   
-  $scm_link = l('South Central Media', 'http://www.southcentralmedia.com', array('attributes' => array('target' => '_blank')));		
-	$vars['credits'] = "Design & Development by $scm_link";
+  $scm_link = l('Sean Shaw', 'http://www.seanpshaw.com', array('attributes' => array('target' => '_blank')));		
+	$vars['credits'] = "Design & Development by Sean Shaw";
   
   global $theme_key;
   $settings = theme_get_settings($theme_key);
   
-  if (!empty($settings['hero_shot_path'])) {
-     $vars['hero_shot_path'] = $settings['hero_shot_path'];
-   }
-   else {
-     $variables['hero_shot_path'] = path_to_theme().'/head.jpg';
-   }
-   
-   $vars['featured_content']  = _get_featured_content($vars, $settings);
-   if(!empty($vars['featured_content'])) { $vars['classes_array'][] = 'has-featured-content'; }
-  // dpm($settings);  
-
-  
   $vars['address_raw'] = _get_address_from_settings($settings);
   
-  $vars['phone'] = !empty($settings['bella_starter_phone']) ? $settings['bella_starter_phone'] : '';
-
-  $vars['fax'] = !empty($settings['bella_starter_fax']) ? $settings['bella_starter_fax'] : '';
-  
+  $vars['phone'] = !empty($settings['bella_starter_phone']) ? $settings['bella_starter_phone'] : '';  
 
 
   $l = '';
@@ -247,83 +232,7 @@ function bella_starter_preprocess_page(&$vars, $hook) {
 }
 
 
-function _get_featured_content(&$vars, $settings) {
-  $o = '';
-  
-  // if (empty($settings['featured_style'])) { return; }
-  if(!$vars['is_front'] && empty($settings['featured_interior']) ) { return; }
 
-  $featured_left = '';
-  $featured_right = '';
-  
-  $s = !empty($settings['featured_style']) ? $settings['featured_style'] : 'hero_webform';
-  
-  switch($s) {
-   case 'hero_webform':
-     $featured_left = _get_hero_shot($settings);
-     $featured_right = _get_first_webform();
-     break;
-  
-   case 'hero_text':
-     $featured_left = _get_hero_shot($settings);
-     $featured_right = _get_featured_text($settings);
-     break;
-  
-   case 'text_webform':
-     $featured_left = _get_featured_text($settings);
-     $featured_right = _get_first_webform();
-     break;
-  
-   case 'none':
-     return;
-     break;
-  }
-  
-  $o = '<div class="column grid-10 alpha featured-left"><div class="featured-left-wrapper"> ' . $featured_left . ' </div></div>';
-  $o .= '<div class="column grid-6 omega featured-right"><div class="featured-right-wrapper"> ' . $featured_right . ' </div></div>';
-  
-  return $o;
-  
-}
-
-function _get_featured_text($settings) {
-  $o = '<div class="featured-text">';
-  if(!empty($settings['featured_title'])){
-    $o .= '<h2 class="title">' . $settings['featured_title'] . '</h2>';
-  }  
-  if(!empty($settings['featured_text'])){
-    $o .= '<p>' . $settings['featured_text'] . '</p>';
-  }
-  $o .= '</div>';
-  return $o;
-}
-
-function _get_hero_shot($settings){
-  
-  $path = !empty($settings['hero_shot_path']) ? $settings['hero_shot_path'] : drupal_get_path('theme', 'bella_starter') . '/images/nohero.png';
-  if (module_exists('theme_imagecache')) {
-    return '<div class="hero-shot-wrapper">' . theme_imagecache('bella_starter-hero_shot', $path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) . '</div>';
-  }
-  else {
-    return '<div class="hero-shot-wrapper"><img src="' . $path . '" /></div>';
-  }
-  
-}
-
-
-function _get_first_webform(){
-  $sql =  "  SELECT node.nid AS nid, 
-          node.created AS node_created FROM node node   
-          WHERE (node.status <> 0) AND node.type = 'webform' ORDER BY node_created DESC LIMIT 1";
-
-  $query = db_query($sql);
-  
-   while ($obj = db_fetch_object($query)) {      
-     $webform_node = node_load(array("nid" => $obj->nid));
-     // dpm($webform_node);
-     $webform_node_view = node_view($webform_node, $teaser = FALSE, $page  = FALSE, $links = TRUE);
-   }
-   return $webform_node_view;
   
 }
 /**
@@ -345,8 +254,8 @@ function _get_first_webform(){
 function _get_address_from_settings( $settings) {
   $out = '';
   if (!empty($settings['bella_starter_street1']))     $out .= $settings['bella_starter_street1'];
-  if (!empty($settings['bella_starter_street2']))     $out .= '<br />'. $settings['bella_starter_street2'];
-  if ($out && (!empty($settings['bella_starter_city']) || !empty($settings['bella_starter_state']) || !empty($settings['bella_starter_zip']))) $out .= '<br />';
+  if (!empty($settings['bella_starter_street2']))     $out .= ''. $settings['bella_starter_street2'];
+  if ($out && (!empty($settings['bella_starter_city']) || !empty($settings['bella_starter_state']) || !empty($settings['bella_starter_zip']))) $out .= '';
   if (!empty($settings['bella_starter_city']))        $out .= $settings['bella_starter_city'] .', ';
   if (!empty($settings['bella_starter_state']))       $out .= $settings['bella_starter_state'] .' ';
   if (!empty($settings['bella_starter_zip']))       $out .= $settings['bella_starter_zip'];
