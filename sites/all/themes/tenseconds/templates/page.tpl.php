@@ -120,6 +120,11 @@
   		      <?php // print $footer; ?>
           </div> <!-- /#footer-inner -->
 		    </div> <!-- /#footer -->
+		    <div id="footer-bottom" class="container-16 clearfix clear">
+		      <div id="address_raw"><?php print $address_raw; ?></div>
+		      <div id="email"><a href="mailto:info@tensecondsmovie.com" title="10 Seconds Email" rel="">info@10secondsmovie.com</a></div>
+		      <div id="bella-logo"><a href="http://www.bellaveritasproductions.com" title="Bella Veritas Productions" rel="Bella Veritas Productions"><img src="../images/bella-logo.png" alt="Bella Veritas Productions" /></a></div>
+		    </div>
 		  </div> <!-- /#footer-wrapper -->
 	  <?php endif; ?>
 	</div> <!--  /#page -->
