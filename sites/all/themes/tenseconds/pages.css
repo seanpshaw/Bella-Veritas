@@ -12,6 +12,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-cast-and-crew-page #main h1.title { height: 60px; }
 .page-cast-and-crew-page #main img {
   top: 60px;
   right: -400px;
@@ -27,6 +28,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-jessejames-locorriere #main h1.title { height: 60px; }
 .page-jessejames-locorriere #main img {
   top: 60px;
   right: -400px;
@@ -42,6 +44,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-amanda-bailey #main h1.title { height: 60px; }
 .page-amanda-bailey #main img {
   top: 60px;
   right: -400px;
@@ -57,6 +60,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-claire-engler #main h1.title { height: 60px; }
 .page-claire-engler #main img {
   top: 60px;
   right: -400px;
@@ -72,6 +76,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-carrington-durham #main h1.title { height: 60px; }
 .page-carrington-durham #main img {
   top: 60px;
   right: -400px;
@@ -87,6 +92,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-christine-poythress #main h1.title { height: 60px; }
 .page-christine-poythress #main img {
   top: 60px;
   right: -400px;
@@ -102,6 +108,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-aidan-mitchell #main h1.title { height: 60px; }
 .page-aidan-mitchell #main img {
   top: 60px;
   right: -400px;
@@ -117,6 +124,7 @@
   min-height: 450px;
   position: relative;
 }
+.page-matt-coale #main h1.title { height: 60px; }
 .page-matt-coale #main img {
   top: 60px;
   right: -400px;
