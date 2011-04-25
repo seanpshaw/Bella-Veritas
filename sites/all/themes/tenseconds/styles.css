@@ -238,6 +238,9 @@
   right: 347px;
   top: -45px;
 }
+#footer-wrapper #footer-bottom .footer-bottom-right { text-align: right; }
+#footer-wrapper #footer-bottom .footer-bottom-left { font-size: 0.75em; }
+#footer-wrapper #footer-bottom .footer-bottom-right { font-size: 0.75em; }
 #partners-left {
   width: 460px;
   float: left;
