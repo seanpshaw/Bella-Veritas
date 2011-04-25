@@ -242,11 +242,15 @@
   right: 347px;
   top: -45px;
 }
-#footer-wrapper #footer-bottom .footer-bottom-right { text-align: right; }
-#footer-wrapper #footer-bottom .footer-bottom-right #email { display: inline; }
-#footer-wrapper #footer-bottom .footer-bottom-right #site-link { display: inline; }
-#footer-wrapper #footer-bottom .footer-bottom-left { font-size: 0.75em; }
-#footer-wrapper #footer-bottom .footer-bottom-right { font-size: 0.75em; }
+#footer-wrapper #footer-bottom #email {
+  position: absolute;
+  right: 15px;
+  top: -45px;
+}
+#footer-wrapper #footer-bottom #address_raw {
+  font-size: 0.75em;
+  text-align: right;
+}
 #footer-wrapper #footer-credits #credits {
   font-size: 0.55em;
   color: white;

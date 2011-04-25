@@ -122,13 +122,8 @@
 		    </div> <!-- /#footer -->
 		    <div id="footer-bottom" class="container-16 clearfix clear">
 		      <div id="bella-logo"><a href="http://www.bellaveritas.com" title="Bella Veritas Productions" rel="Bella Veritas Productions"><img src="sites/all/themes/tenseconds/images/bella-logo.png" alt="Bella Veritas Productions" /></a></div>
-		      <div class="grid-8 footer-bottom-left">
-		        <div id="address_raw"><?php print $address_raw; ?></div>
-		      </div>
-		      <div class="grid-8 footer-bottom-right">
-  		      <?php print $link; ?>
-  		      <div id="email"><a href="mailto:info@tensecondsmovie.com" title="10 Seconds Email" rel="">info@10secondsmovie.com</a></div>
-  		    </div>
+		      <div id="email"><a href="mailto:info@10secondsmovie.com" title="10 Seconds Email" rel=""><img src="sites/all/themes/tenseconds/images/email-image.png" alt="info@10secondsmovie.com" /></a></div>
+		      <div id="address_raw"><?php print $address_raw; ?></div>
 		    </div>
 		    <div id="footer-credits" class="container-16 clearfix clear">
           <div id="credits">Design &amp; Development by <a href="http://www.seanpshaw.com">Sean Shaw</a></div>
