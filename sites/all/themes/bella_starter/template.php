@@ -250,8 +250,8 @@ function bella_starter_preprocess_page(&$vars, $hook) {
 function _get_address_from_settings( $settings) {
   $out = '';
   if (!empty($settings['bella_starter_street1']))     $out .= $settings['bella_starter_street1'];
-  if (!empty($settings['bella_starter_street2']))     $out .= ''. $settings['bella_starter_street2'];
-  if ($out && (!empty($settings['bella_starter_city']) || !empty($settings['bella_starter_state']) || !empty($settings['bella_starter_zip']))) $out .= '';
+  if (!empty($settings['bella_starter_street2']))     $out .= ' '. $settings['bella_starter_street2'];
+  if ($out && (!empty($settings['bella_starter_city']) || !empty($settings['bella_starter_state']) || !empty($settings['bella_starter_zip']))) $out .= ' ';
   if (!empty($settings['bella_starter_city']))        $out .= $settings['bella_starter_city'] .', ';
   if (!empty($settings['bella_starter_state']))       $out .= $settings['bella_starter_state'] .' ';
   if (!empty($settings['bella_starter_zip']))       $out .= $settings['bella_starter_zip'];
