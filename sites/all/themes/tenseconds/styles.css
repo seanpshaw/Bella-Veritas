@@ -224,7 +224,7 @@
 }
 #footer-wrapper {
   background: url('images/footer-wrapper.png') repeat 0 0;
-  height: 160px;
+  height: 165px;
 }
 #footer-wrapper #footer { padding-top: 15px; }
 #footer-wrapper #footer .footer-left { padding-top: 8px; }
@@ -245,13 +245,13 @@
 #footer-wrapper #footer-bottom .footer-bottom-right { text-align: right; }
 #footer-wrapper #footer-bottom .footer-bottom-right #email { display: inline; }
 #footer-wrapper #footer-bottom .footer-bottom-right #site-link { display: inline; }
-#footer-wrapper #footer-bottom .footer-bottom-left { color: white; }
 #footer-wrapper #footer-bottom .footer-bottom-left { font-size: 0.75em; }
 #footer-wrapper #footer-bottom .footer-bottom-right { font-size: 0.75em; }
 #footer-wrapper #footer-credits #credits {
   font-size: 0.55em;
   color: white;
   text-align: right;
+  padding-right: 10px;
 }
 #partners-left {
   width: 460px;
