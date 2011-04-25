@@ -119,6 +119,7 @@
   float: left;
   cursor: pointer;
 }
+#block-menu-secondary-links ul li a:hover { cursor: pointer; }
 #block-menu-secondary-links ul li a:link[href="/jessejames-locorriere"] {
   background: url('images/cast-nav-sprite.png') no-repeat 0 0;
   width: 110px;
