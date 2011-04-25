@@ -136,6 +136,54 @@
   position: relative;
   position: absolute;
 }
+.page-emilygrace-yorgey #main-wrapper #main {
+  min-height: 450px;
+  position: relative;
+}
+.page-emilygrace-yorgey #main-wrapper #main h1.title { height: 60px; }
+.page-emilygrace-yorgey #main-wrapper #main img {
+  top: 60px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+  position: absolute;
+}
+.page-kazimir-boyle #main-wrapper #main {
+  min-height: 450px;
+  position: relative;
+}
+.page-kazimir-boyle #main-wrapper #main h1.title { height: 60px; }
+.page-kazimir-boyle #main-wrapper #main img {
+  top: 60px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+  position: absolute;
+}
+.page-duncan-ragsdale #main-wrapper #main {
+  min-height: 450px;
+  position: relative;
+}
+.page-duncan-ragsdale #main-wrapper #main h1.title { height: 60px; }
+.page-duncan-ragsdale #main-wrapper #main img {
+  top: 60px;
+  right: -400px;
+  border: 5px solid #372424;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+  position: absolute;
+}
 .page-jessejames-locorriere #main h1.title {
   width: 300px;
   background: url('images/jesse-header.png') no-repeat 0 0;
@@ -170,6 +218,21 @@
 .page-matt-coale #main h1.title {
   width: 300px;
   background: url('images/matt-header.png') no-repeat 0 0;
+}
+.page-emilygrace-yorgey #main { min-height: 375px; }
+.page-emilygrace-yorgey #main h1.title {
+  width: 300px;
+  background: url('images/emily-header.png') no-repeat 0 0;
+}
+.page-kazimir-boyle #main { min-height: 375px; }
+.page-kazimir-boyle #main h1.title {
+  width: 300px;
+  background: url('images/kazmir-header.png') no-repeat 0 0;
+}
+.page-duncan-ragsdale #main { min-height: 375px; }
+.page-duncan-ragsdale #main h1.title {
+  width: 300px;
+  background: url('images/duncan-header.png') no-repeat 0 0;
 }
 .page-gallery #page { background: url('images/gallery-bg.png') no-repeat 50% 100%; }
 .page-gallery #main h1.title {
