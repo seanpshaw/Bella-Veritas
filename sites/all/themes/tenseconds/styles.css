@@ -232,7 +232,11 @@
   background: url('images/credits.png') no-repeat 0 0;
   height: 98px;
 }
-#footer-wrapper #footer-bottom { position: relative; }
+#footer-wrapper #footer-bottom {
+  position: relative;
+  color: #703137;
+  padding-top: 5px;
+}
 #footer-wrapper #footer-bottom #bella-logo {
   position: absolute;
   right: 347px;
@@ -245,8 +249,9 @@
 #footer-wrapper #footer-bottom .footer-bottom-left { font-size: 0.75em; }
 #footer-wrapper #footer-bottom .footer-bottom-right { font-size: 0.75em; }
 #footer-wrapper #footer-credits #credits {
-  font-size: 0.65em;
+  font-size: 0.55em;
   color: white;
+  text-align: right;
 }
 #partners-left {
   width: 460px;
