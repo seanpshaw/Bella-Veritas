@@ -106,14 +106,14 @@
   list-style: none;
 }
 #block-menu-secondary-links ul li a:link {
-  height: 87px;
+  height: 88px;
   display: block;
   text-indent: -5000px;
   float: left;
   cursor: pointer;
 }
 #block-menu-secondary-links ul li a:visited {
-  height: 87px;
+  height: 88px;
   display: block;
   text-indent: -5000px;
   float: left;
