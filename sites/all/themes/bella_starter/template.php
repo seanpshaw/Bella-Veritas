@@ -231,10 +231,6 @@ function bella_starter_preprocess_page(&$vars, $hook) {
   $vars['color_style'] = !empty($settings['color_style']) ? $settings['color_style'] : '';
 }
 
-
-
-  
-}
 /**
  * Override or insert variables into the node templates.
  *
