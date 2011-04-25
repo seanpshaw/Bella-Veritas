@@ -8,12 +8,12 @@
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew-page #main {
+.page-cast-and-crew-page #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-cast-and-crew-page #main h1.title { height: 60px; }
-.page-cast-and-crew-page #main img {
+.page-cast-and-crew-page #main-wrapper #main h1.title { height: 60px; }
+.page-cast-and-crew-page #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -24,12 +24,12 @@
   position: relative;
   position: absolute;
 }
-.page-jessejames-locorriere #main {
+.page-jessejames-locorriere #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-jessejames-locorriere #main h1.title { height: 60px; }
-.page-jessejames-locorriere #main img {
+.page-jessejames-locorriere #main-wrapper #main h1.title { height: 60px; }
+.page-jessejames-locorriere #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -40,12 +40,12 @@
   position: relative;
   position: absolute;
 }
-.page-amanda-bailey #main {
+.page-amanda-bailey #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-amanda-bailey #main h1.title { height: 60px; }
-.page-amanda-bailey #main img {
+.page-amanda-bailey #main-wrapper #main h1.title { height: 60px; }
+.page-amanda-bailey #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -56,12 +56,12 @@
   position: relative;
   position: absolute;
 }
-.page-claire-engler #main {
+.page-claire-engler #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-claire-engler #main h1.title { height: 60px; }
-.page-claire-engler #main img {
+.page-claire-engler #main-wrapper #main h1.title { height: 60px; }
+.page-claire-engler #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -72,12 +72,12 @@
   position: relative;
   position: absolute;
 }
-.page-carrington-durham #main {
+.page-carrington-durham #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-carrington-durham #main h1.title { height: 60px; }
-.page-carrington-durham #main img {
+.page-carrington-durham #main-wrapper #main h1.title { height: 60px; }
+.page-carrington-durham #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -88,12 +88,12 @@
   position: relative;
   position: absolute;
 }
-.page-christine-poythress #main {
+.page-christine-poythress #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-christine-poythress #main h1.title { height: 60px; }
-.page-christine-poythress #main img {
+.page-christine-poythress #main-wrapper #main h1.title { height: 60px; }
+.page-christine-poythress #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -104,12 +104,12 @@
   position: relative;
   position: absolute;
 }
-.page-aidan-mitchell #main {
+.page-aidan-mitchell #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-aidan-mitchell #main h1.title { height: 60px; }
-.page-aidan-mitchell #main img {
+.page-aidan-mitchell #main-wrapper #main h1.title { height: 60px; }
+.page-aidan-mitchell #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -120,12 +120,12 @@
   position: relative;
   position: absolute;
 }
-.page-matt-coale #main {
+.page-matt-coale #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-matt-coale #main h1.title { height: 60px; }
-.page-matt-coale #main img {
+.page-matt-coale #main-wrapper #main h1.title { height: 60px; }
+.page-matt-coale #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
