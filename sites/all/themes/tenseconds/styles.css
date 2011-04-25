@@ -239,8 +239,15 @@
   top: -45px;
 }
 #footer-wrapper #footer-bottom .footer-bottom-right { text-align: right; }
+#footer-wrapper #footer-bottom .footer-bottom-right #email { display: inline; }
+#footer-wrapper #footer-bottom .footer-bottom-right #site-link { display: inline; }
+#footer-wrapper #footer-bottom .footer-bottom-left { color: white; }
 #footer-wrapper #footer-bottom .footer-bottom-left { font-size: 0.75em; }
 #footer-wrapper #footer-bottom .footer-bottom-right { font-size: 0.75em; }
+#footer-wrapper #footer-bottom #footer-credits #credits {
+  font-size: 0.65em;
+  color: white;
+}
 #partners-left {
   width: 460px;
   float: left;

@@ -130,6 +130,8 @@
   		      <div id="email"><a href="mailto:info@tensecondsmovie.com" title="10 Seconds Email" rel="">info@10secondsmovie.com</a></div>
   		    </div>
 		    </div>
+		    <div id="footer-credits" class="container-16 clearfix clear">
+          <div id="credits"><?php print $credits; ?></div>
 		  </div> <!-- /#footer-wrapper -->
 	  <?php endif; ?>
 	</div> <!--  /#page -->
