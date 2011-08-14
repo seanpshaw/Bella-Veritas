@@ -2,100 +2,122 @@
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
 }
+/*  PIE does not currently support the 'inset' keyword, but support is planned in a future version */
+/*  background-attachment (will always use 'scroll' even if 'fixed' or 'local' are specified)
+    background-size (will always use the image's intrinsic size)
+    background-repeat values of 'space' or 'round' (the other repeat values are supported)
+    background-position values with more than 2 parts
+    
+    RGBA Color Values
+
+    PIE parses RGBA color values wherever they are allowed. 
+    However it is only able to successfully render their opacity value in a few contexts. 
+    In all other contexts they will be rendered with the correct RGB color, but fully opaque. 
+    Here are the supported contexts in which the opacity will be rendered correctly:
+
+    The solid background-color as specified in the -pie-background property.
+    The color value of box-shadow, if the shadow has no blur.
+    
+    THE IMAGE USED IN -PIE-BACKGROUND MUST BE THE ABSOLUTE PATH
+*/
+/*  PIE currently supports linear-gradient image values when used in the -pie-background property. 
+    Uses in any contexts other than the background are not supported. 
+    The supported syntax matches that of the current CSS3 Image Values module draft.
+*/
+/*-------------------------
+-------Navigation----------
+-------------------------*/
 #primary-navigation-wrapper {
   background: url('images/primary-nav-bg.png') repeat-x 0 0;
   height: 40px;
 }
-#primary-navigation-wrapper #primary-navigation ul { margin: 0; }
+#primary-navigation-wrapper #primary-navigation ul {
+  margin: 0;
+}
 #primary-navigation-wrapper #primary-navigation ul li {
   margin: 0;
   padding: 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li a:link {
+#primary-navigation-wrapper #primary-navigation ul li a:link, #primary-navigation-wrapper #primary-navigation ul li a:visited {
   height: 40px;
   display: block;
   text-indent: -5000px;
   float: left;
   cursor: pointer;
 }
-#primary-navigation-wrapper #primary-navigation ul li a:visited {
-  height: 40px;
-  display: block;
-  text-indent: -5000px;
-  float: left;
-  cursor: pointer;
-}
-#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-123 a:visited {
   background: url('images/nav-sprite.png') no-repeat 0 0;
   width: 100px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:visited {
-  background: url('images/nav-sprite.png') no-repeat 0 0;
-  width: 100px;
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:hover {
+  background: url('images/nav-sprite.png') no-repeat 0 -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-123 a:hover { background: url('images/nav-sprite.png') no-repeat 0 -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-123 a.active { background: url('images/nav-sprite.png') no-repeat 0 -79px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-117 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-123 a.active {
+  background: url('images/nav-sprite.png') no-repeat 0 -79px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-117 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-117 a:visited {
   width: 110px;
   background: url('images/nav-sprite.png') no-repeat -100px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-117 a:visited {
-  width: 110px;
-  background: url('images/nav-sprite.png') no-repeat -100px 0;
+#primary-navigation-wrapper #primary-navigation ul li.menu-117 a:hover {
+  background: url('images/nav-sprite.png') no-repeat -100px -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-117 a:hover { background: url('images/nav-sprite.png') no-repeat -100px -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-117 a.active { background: url('images/nav-sprite.png') no-repeat -100px -79px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-117 a.active {
+  background: url('images/nav-sprite.png') no-repeat -100px -79px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-118 a:visited {
   width: 120px;
   background: url('images/nav-sprite.png') no-repeat -210px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:visited {
-  width: 120px;
-  background: url('images/nav-sprite.png') no-repeat -210px 0;
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:hover {
+  background: url('images/nav-sprite.png') no-repeat -210px -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-118 a:hover { background: url('images/nav-sprite.png') no-repeat -210px -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-118 a.active { background: url('images/nav-sprite.png') no-repeat -210px -79px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-481 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-118 a.active {
+  background: url('images/nav-sprite.png') no-repeat -210px -79px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-481 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-481 a:visited {
   width: 110px;
   background: url('images/nav-sprite.png') no-repeat -330px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-481 a:visited {
-  width: 110px;
-  background: url('images/nav-sprite.png') no-repeat -330px 0;
+#primary-navigation-wrapper #primary-navigation ul li.menu-481 a:hover {
+  background: url('images/nav-sprite.png') no-repeat -330px -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-481 a:hover { background: url('images/nav-sprite.png') no-repeat -330px -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-481 a.active { background: url('images/nav-sprite.png') no-repeat -330px -79px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-481 a.active {
+  background: url('images/nav-sprite.png') no-repeat -330px -79px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-120 a:visited {
   width: 250px;
   background: url('images/nav-sprite.png') no-repeat -440px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:visited {
-  width: 250px;
-  background: url('images/nav-sprite.png') no-repeat -440px 0;
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:hover {
+  background: url('images/nav-sprite.png') no-repeat -440px -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-120 a:hover { background: url('images/nav-sprite.png') no-repeat -440px -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-120 a.active { background: url('images/nav-sprite.png') no-repeat -440px -79px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-120 a.active {
+  background: url('images/nav-sprite.png') no-repeat -440px -79px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-121 a:visited {
   width: 130px;
   background: url('images/nav-sprite.png') no-repeat -690px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:visited {
-  width: 130px;
-  background: url('images/nav-sprite.png') no-repeat -690px 0;
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:hover {
+  background: url('images/nav-sprite.png') no-repeat -690px -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-121 a:hover { background: url('images/nav-sprite.png') no-repeat -690px -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-121 a.active { background: url('images/nav-sprite.png') no-repeat -690px -79px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:link {
+#primary-navigation-wrapper #primary-navigation ul li.menu-121 a.active {
+  background: url('images/nav-sprite.png') no-repeat -690px -79px;
+}
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:link, #primary-navigation-wrapper #primary-navigation ul li.menu-122 a:visited {
   width: 120px;
   background: url('images/nav-sprite.png') no-repeat -810px 0;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:visited {
-  width: 120px;
-  background: url('images/nav-sprite.png') no-repeat -810px 0;
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:hover {
+  background: url('images/nav-sprite.png') no-repeat -810px -38px;
 }
-#primary-navigation-wrapper #primary-navigation ul li.menu-122 a:hover { background: url('images/nav-sprite.png') no-repeat -810px -38px; }
-#primary-navigation-wrapper #primary-navigation ul li.menu-122 a.active { background: url('images/nav-sprite.png') no-repeat -810px -79px; }
-#block-menu-secondary-links h2 { display: none; }
+#primary-navigation-wrapper #primary-navigation ul li.menu-122 a.active {
+  background: url('images/nav-sprite.png') no-repeat -810px -79px;
+}
+#block-menu-secondary-links h2 {
+  display: none;
+}
 #block-menu-secondary-links ul {
   margin: 0;
   padding: 0;
@@ -105,111 +127,89 @@
   padding: 0;
   list-style: none;
 }
-#block-menu-secondary-links ul li a:link {
+#block-menu-secondary-links ul li a:link, #block-menu-secondary-links ul li a:visited {
   height: 87px;
   display: block;
   text-indent: -5000px;
   float: left;
   cursor: pointer;
 }
-#block-menu-secondary-links ul li a:visited {
-  height: 87px;
-  display: block;
-  text-indent: -5000px;
-  float: left;
+#block-menu-secondary-links ul li a:hover {
   cursor: pointer;
 }
-#block-menu-secondary-links ul li a:hover { cursor: pointer; }
-#block-menu-secondary-links ul li a:link[href="/jessejames-locorriere"] {
+#block-menu-secondary-links ul li a:link[href="/jessejames-locorriere"], #block-menu-secondary-links ul li a:visited[href="/jessejames-locorriere"] {
   background: url('images/cast-nav-sprite.png') no-repeat 0 0;
   width: 110px;
 }
-#block-menu-secondary-links ul li a:visited[href="/jessejames-locorriere"] {
-  background: url('images/cast-nav-sprite.png') no-repeat 0 0;
-  width: 110px;
+#block-menu-secondary-links ul li a:hover[href="/jessejames-locorriere"] {
+  background: url('images/cast-nav-sprite.png') no-repeat 0 -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/jessejames-locorriere"] { background: url('images/cast-nav-sprite.png') no-repeat 0 -88px; }
-#block-menu-secondary-links ul li a:link[href="/amanda-bailey"] {
+#block-menu-secondary-links ul li a:link[href="/amanda-bailey"], #block-menu-secondary-links ul li a:visited[href="/amanda-bailey"] {
   background: url('images/cast-nav-sprite.png') no-repeat -110px 0;
   width: 93px;
 }
-#block-menu-secondary-links ul li a:visited[href="/amanda-bailey"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -110px 0;
-  width: 93px;
+#block-menu-secondary-links ul li a:hover[href="/amanda-bailey"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -110px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/amanda-bailey"] { background: url('images/cast-nav-sprite.png') no-repeat -110px -88px; }
-#block-menu-secondary-links ul li a:link[href="/aidan-mitchell"] {
+#block-menu-secondary-links ul li a:link[href="/aidan-mitchell"], #block-menu-secondary-links ul li a:visited[href="/aidan-mitchell"] {
   background: url('images/cast-nav-sprite.png') no-repeat -203px 0;
   width: 92px;
 }
-#block-menu-secondary-links ul li a:visited[href="/aidan-mitchell"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -203px 0;
-  width: 92px;
+#block-menu-secondary-links ul li a:hover[href="/aidan-mitchell"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -203px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/aidan-mitchell"] { background: url('images/cast-nav-sprite.png') no-repeat -203px -88px; }
-#block-menu-secondary-links ul li a:link[href="/claire-engler"] {
+#block-menu-secondary-links ul li a:link[href="/claire-engler"], #block-menu-secondary-links ul li a:visited[href="/claire-engler"] {
   background: url('images/cast-nav-sprite.png') no-repeat -295px 0;
   width: 92px;
 }
-#block-menu-secondary-links ul li a:visited[href="/claire-engler"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -295px 0;
-  width: 92px;
+#block-menu-secondary-links ul li a:hover[href="/claire-engler"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -295px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/claire-engler"] { background: url('images/cast-nav-sprite.png') no-repeat -295px -88px; }
-#block-menu-secondary-links ul li a:link[href="/carrington-durham"] {
+#block-menu-secondary-links ul li a:link[href="/carrington-durham"], #block-menu-secondary-links ul li a:visited[href="/carrington-durham"] {
   background: url('images/cast-nav-sprite.png') no-repeat -387px 0;
   width: 92px;
 }
-#block-menu-secondary-links ul li a:visited[href="/carrington-durham"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -387px 0;
-  width: 92px;
+#block-menu-secondary-links ul li a:hover[href="/carrington-durham"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -387px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/carrington-durham"] { background: url('images/cast-nav-sprite.png') no-repeat -387px -88px; }
-#block-menu-secondary-links ul li a:link[href="/emilygrace-yorgey"] {
+#block-menu-secondary-links ul li a:link[href="/emilygrace-yorgey"], #block-menu-secondary-links ul li a:visited[href="/emilygrace-yorgey"] {
   background: url('images/cast-nav-sprite.png') no-repeat -479px 0;
   width: 92px;
 }
-#block-menu-secondary-links ul li a:visited[href="/emilygrace-yorgey"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -479px 0;
-  width: 92px;
+#block-menu-secondary-links ul li a:hover[href="/emilygrace-yorgey"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -479px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/emilygrace-yorgey"] { background: url('images/cast-nav-sprite.png') no-repeat -479px -88px; }
-#block-menu-secondary-links ul li a:link[href="/christine-poythress"] {
+#block-menu-secondary-links ul li a:link[href="/christine-poythress"], #block-menu-secondary-links ul li a:visited[href="/christine-poythress"] {
   background: url('images/cast-nav-sprite.png') no-repeat -571px 0;
   width: 92px;
 }
-#block-menu-secondary-links ul li a:visited[href="/christine-poythress"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -571px 0;
-  width: 92px;
+#block-menu-secondary-links ul li a:hover[href="/christine-poythress"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -571px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/christine-poythress"] { background: url('images/cast-nav-sprite.png') no-repeat -571px -88px; }
-#block-menu-secondary-links ul li a:link[href="/matt-coale"] {
+#block-menu-secondary-links ul li a:link[href="/matt-coale"], #block-menu-secondary-links ul li a:visited[href="/matt-coale"] {
   background: url('images/cast-nav-sprite.png') no-repeat -663px 0;
   width: 91px;
 }
-#block-menu-secondary-links ul li a:visited[href="/matt-coale"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -663px 0;
-  width: 91px;
+#block-menu-secondary-links ul li a:hover[href="/matt-coale"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -663px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/matt-coale"] { background: url('images/cast-nav-sprite.png') no-repeat -663px -88px; }
-#block-menu-secondary-links ul li a:link[href="/duncan-ragsdale"] {
+#block-menu-secondary-links ul li a:link[href="/duncan-ragsdale"], #block-menu-secondary-links ul li a:visited[href="/duncan-ragsdale"] {
   background: url('images/cast-nav-sprite.png') no-repeat -754px 0;
   width: 95px;
 }
-#block-menu-secondary-links ul li a:visited[href="/duncan-ragsdale"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -754px 0;
-  width: 95px;
+#block-menu-secondary-links ul li a:hover[href="/duncan-ragsdale"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -754px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/duncan-ragsdale"] { background: url('images/cast-nav-sprite.png') no-repeat -754px -88px; }
-#block-menu-secondary-links ul li a:link[href="/kazimir-boyle"] {
+#block-menu-secondary-links ul li a:link[href="/kazimir-boyle"], #block-menu-secondary-links ul li a:visited[href="/kazimir-boyle"] {
   background: url('images/cast-nav-sprite.png') no-repeat -849px 0;
   width: 92px;
 }
-#block-menu-secondary-links ul li a:visited[href="/kazimir-boyle"] {
-  background: url('images/cast-nav-sprite.png') no-repeat -849px 0;
-  width: 92px;
+#block-menu-secondary-links ul li a:hover[href="/kazimir-boyle"] {
+  background: url('images/cast-nav-sprite.png') no-repeat -849px -88px;
 }
-#block-menu-secondary-links ul li a:hover[href="/kazimir-boyle"] { background: url('images/cast-nav-sprite.png') no-repeat -849px -88px; }
+/*-------------------------
+---------Main--------------
+-------------------------*/
 #main-wrapper #main {
   width: 460px;
   padding-top: 50px;
@@ -223,12 +223,19 @@
   background: url('images/trafficking-border.png') no-repeat 0 0;
   padding-top: 10px;
 }
+/*-------------------------
+---------Footer------------
+-------------------------*/
 #footer-wrapper {
   background: url('images/footer-wrapper.png') repeat 0 0;
   height: 143px;
 }
-#footer-wrapper #footer { padding-top: 7px; }
-#footer-wrapper #footer .footer-left { padding-top: 8px; }
+#footer-wrapper #footer {
+  padding-top: 7px;
+}
+#footer-wrapper #footer .footer-left {
+  padding-top: 8px;
+}
 #footer-wrapper #footer #credits {
   background: url('images/credits.png') no-repeat 0 0;
   height: 98px;
@@ -261,18 +268,18 @@
   padding-right: 10px;
   margin-top: -7px;
 }
-#partners-left {
+#partners-left, #partner-right {
   width: 460px;
   float: left;
   margin-right: 10px;
 }
-#partners-left h2 {
+#partners-left h2, #partner-right h2 {
   font-size: 1.1em;
   font-family: Helvetica, Arial, Tahoma, Sans-serif;
-  color: #542429;
+  color: #542529;
   margin-bottom: 5px;
 }
-#partners-left img {
+#partners-left img, #partner-right img {
   display: block;
   line-height: 0;
   -moz-border-radius: 5px;
@@ -285,56 +292,27 @@
   background: white;
   padding: 3px;
 }
-#partners-left a:link {
-  color: #542429;
-  text-decoration: none;
-}
-#partners-left a:visited {
-  color: #542429;
-  text-decoration: none;
-}
-#partners-left a:hover { text-decoration: underline; }
-#partners-left .partner-text {
-  padding-left: 130px;
-  margin-top: -30px;
-}
-#partner-right {
-  width: 460px;
-  float: left;
-  margin-right: 10px;
-}
-#partner-right h2 {
-  font-size: 1.1em;
-  font-family: Helvetica, Arial, Tahoma, Sans-serif;
-  color: #542429;
-  margin-bottom: 5px;
-}
-#partner-right img {
-  display: block;
-  line-height: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  border: 3px solid #372424;
-  margin-right: 5px;
-  background: white;
-  padding: 3px;
-}
-#partner-right a:link {
-  color: #542429;
-  text-decoration: none;
-}
+#partners-left a:link,
+#partner-right a:link,
+#partners-left a:visited,
 #partner-right a:visited {
-  color: #542429;
+  color: #542529;
   text-decoration: none;
 }
-#partner-right a:hover { text-decoration: underline; }
-#partner-right .partner-text {
+#partners-left a:hover, #partner-right a:hover {
+  text-decoration: underline;
+}
+#partners-left .partner-text, #partner-right .partner-text {
   padding-left: 130px;
   margin-top: -30px;
 }
+#partners-left {
+  margin-right: 20px;
+}
+#partners-right {
+  width: 450px;
+}
+/* slightly enhanced, universal clearfix hack */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -343,6 +321,14 @@
   clear: both;
   height: 0;
 }
-.clearfix { display: inline-block; }
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */

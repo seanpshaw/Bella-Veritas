@@ -2,177 +2,75 @@
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
 }
-.page-synopsis #page { background: url('images/synopsis-bg.png') no-repeat 50% 100%; }
-.page-synopsis #main { padding-bottom: 100px; }
+/*  PIE does not currently support the 'inset' keyword, but support is planned in a future version */
+/*  background-attachment (will always use 'scroll' even if 'fixed' or 'local' are specified)
+    background-size (will always use the image's intrinsic size)
+    background-repeat values of 'space' or 'round' (the other repeat values are supported)
+    background-position values with more than 2 parts
+    
+    RGBA Color Values
+
+    PIE parses RGBA color values wherever they are allowed. 
+    However it is only able to successfully render their opacity value in a few contexts. 
+    In all other contexts they will be rendered with the correct RGB color, but fully opaque. 
+    Here are the supported contexts in which the opacity will be rendered correctly:
+
+    The solid background-color as specified in the -pie-background property.
+    The color value of box-shadow, if the shadow has no blur.
+    
+    THE IMAGE USED IN -PIE-BACKGROUND MUST BE THE ABSOLUTE PATH
+*/
+/*  PIE currently supports linear-gradient image values when used in the -pie-background property. 
+    Uses in any contexts other than the background are not supported. 
+    The supported syntax matches that of the current CSS3 Image Values module draft.
+*/
+.page-synopsis #page {
+  background: url('images/synopsis-bg.png') no-repeat 50% 100%;
+}
+.page-synopsis #main {
+  padding-bottom: 100px;
+}
 .page-synopsis #main h1.title {
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew-page #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-cast-and-crew-page #main-wrapper #main h1.title { height: 60px; }
-.page-cast-and-crew-page #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-jessejames-locorriere #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-jessejames-locorriere #main-wrapper #main h1.title { height: 60px; }
-.page-jessejames-locorriere #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-amanda-bailey #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-amanda-bailey #main-wrapper #main h1.title { height: 60px; }
-.page-amanda-bailey #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-claire-engler #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-claire-engler #main-wrapper #main h1.title { height: 60px; }
-.page-claire-engler #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-carrington-durham #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-carrington-durham #main-wrapper #main h1.title { height: 60px; }
-.page-carrington-durham #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-christine-poythress #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-christine-poythress #main-wrapper #main h1.title { height: 60px; }
-.page-christine-poythress #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-aidan-mitchell #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-aidan-mitchell #main-wrapper #main h1.title { height: 60px; }
-.page-aidan-mitchell #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-matt-coale #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-matt-coale #main-wrapper #main h1.title { height: 60px; }
-.page-matt-coale #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-emilygrace-yorgey #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-emilygrace-yorgey #main-wrapper #main h1.title { height: 60px; }
-.page-emilygrace-yorgey #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
-.page-kazimir-boyle #main-wrapper #main {
-  min-height: 450px;
-  position: relative;
-}
-.page-kazimir-boyle #main-wrapper #main h1.title { height: 60px; }
-.page-kazimir-boyle #main-wrapper #main img {
-  top: 60px;
-  right: -400px;
-  border: 5px solid #372424;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
-  position: absolute;
-}
+.page-cast-and-crew-page #main-wrapper #main,
+.page-jessejames-locorriere #main-wrapper #main,
+.page-amanda-bailey #main-wrapper #main,
+.page-claire-engler #main-wrapper #main,
+.page-carrington-durham #main-wrapper #main,
+.page-christine-poythress #main-wrapper #main,
+.page-aidan-mitchell #main-wrapper #main,
+.page-matt-coale #main-wrapper #main,
+.page-emilygrace-yorgey #main-wrapper #main,
+.page-kazimir-boyle #main-wrapper #main,
 .page-duncan-ragsdale #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-duncan-ragsdale #main-wrapper #main h1.title { height: 60px; }
+.page-cast-and-crew-page #main-wrapper #main h1.title,
+.page-jessejames-locorriere #main-wrapper #main h1.title,
+.page-amanda-bailey #main-wrapper #main h1.title,
+.page-claire-engler #main-wrapper #main h1.title,
+.page-carrington-durham #main-wrapper #main h1.title,
+.page-christine-poythress #main-wrapper #main h1.title,
+.page-aidan-mitchell #main-wrapper #main h1.title,
+.page-matt-coale #main-wrapper #main h1.title,
+.page-emilygrace-yorgey #main-wrapper #main h1.title,
+.page-kazimir-boyle #main-wrapper #main h1.title,
+.page-duncan-ragsdale #main-wrapper #main h1.title {
+  height: 60px;
+}
+.page-cast-and-crew-page #main-wrapper #main img,
+.page-jessejames-locorriere #main-wrapper #main img,
+.page-amanda-bailey #main-wrapper #main img,
+.page-claire-engler #main-wrapper #main img,
+.page-carrington-durham #main-wrapper #main img,
+.page-christine-poythress #main-wrapper #main img,
+.page-aidan-mitchell #main-wrapper #main img,
+.page-matt-coale #main-wrapper #main img,
+.page-emilygrace-yorgey #main-wrapper #main img,
+.page-kazimir-boyle #main-wrapper #main img,
 .page-duncan-ragsdale #main-wrapper #main img {
   top: 60px;
   right: -400px;
@@ -184,15 +82,13 @@
   position: relative;
   position: absolute;
 }
-.page-jessejames-locorriere #main h1.title {
+.page-jessejames-locorriere #main h1.title, .page-cast-and-crew-page #main h1.title {
   width: 300px;
   background: url('images/jesse-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew-page #main h1.title {
-  width: 300px;
-  background: url('images/jesse-header.png') no-repeat 0 0;
+.page-amanda-bailey #main {
+  min-height: 475px;
 }
-.page-amanda-bailey #main { min-height: 475px; }
 .page-amanda-bailey #main h1.title {
   width: 300px;
   background: url('images/amanda-header.png') no-repeat 0 0;
@@ -201,7 +97,9 @@
   width: 300px;
   background: url('images/carrington-header.png') no-repeat 0 0;
 }
-.page-claire-engler #main { min-height: 480px; }
+.page-claire-engler #main {
+  min-height: 480px;
+}
 .page-claire-engler #main h1.title {
   width: 300px;
   background: url('images/claire-header.png') no-repeat 0 0;
@@ -214,34 +112,50 @@
   width: 300px;
   background: url('images/aidan-header.png') no-repeat 0 0;
 }
-.page-matt-coale #main { min-height: 375px; }
+.page-matt-coale #main {
+  min-height: 375px;
+}
 .page-matt-coale #main h1.title {
   width: 300px;
   background: url('images/matt-header.png') no-repeat 0 0;
 }
-.page-emilygrace-yorgey #main { min-height: 375px; }
+.page-emilygrace-yorgey #main {
+  min-height: 375px;
+}
 .page-emilygrace-yorgey #main h1.title {
   width: 300px;
   background: url('images/emily-header.png') no-repeat 0 0;
 }
-.page-kazimir-boyle #main { min-height: 375px; }
+.page-kazimir-boyle #main {
+  min-height: 375px;
+}
 .page-kazimir-boyle #main h1.title {
   width: 300px;
   background: url('images/kazmir-header.png') no-repeat 0 0;
 }
-.page-duncan-ragsdale #main { min-height: 375px; }
+.page-duncan-ragsdale #main {
+  min-height: 375px;
+}
 .page-duncan-ragsdale #main h1.title {
   width: 300px;
   background: url('images/duncan-header.png') no-repeat 0 0;
 }
-.page-gallery #page { background: url('images/gallery-bg.png') no-repeat 50% 100%; }
+.page-gallery #page {
+  background: url('images/gallery-bg.png') no-repeat 50% 100%;
+}
 .page-gallery #main h1.title {
   width: 130px;
   background: url('images/gallery-header.png') no-repeat 0 0;
 }
-.page-gallery #main #content-area .node-type-gallery .meta { display: none; }
-.page-gallery #main #content-area .node-type-gallery .view table tbody tr td { padding: 0 7px 14px; }
-.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-field-image-fid .views-label-field-image-fid { display: none; }
+.page-gallery #main #content-area .node-type-gallery .meta {
+  display: none;
+}
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td {
+  padding: 0 7px 14px;
+}
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-field-image-fid .views-label-field-image-fid {
+  display: none;
+}
 .page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-field-image-fid .field-content {
   display: block;
   line-height: 0;
@@ -252,10 +166,18 @@
   position: relative;
   border: 5px solid #372424;
 }
-.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-body { display: none; }
-.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-title { display: none; }
-.page-gallery #main #content-area .node-type-gallery .view table tbody tr td.col-1 { padding-left: 0; }
-.page-sex-addiction-and-trafficking #page { background: url('images/trafficking-bg.png') no-repeat 50% 100%; }
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-body {
+  display: none;
+}
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td .views-field-title {
+  display: none;
+}
+.page-gallery #main #content-area .node-type-gallery .view table tbody tr td.col-1 {
+  padding-left: 0;
+}
+.page-sex-addiction-and-trafficking #page {
+  background: url('images/trafficking-bg.png') no-repeat 50% 100%;
+}
 .page-sex-addiction-and-trafficking #main-wrapper #main {
   min-height: 500px;
   width: 640px;
@@ -264,27 +186,55 @@
   width: 300px;
   background: url('images/trafficking-header.png') no-repeat 0 0;
 }
-.page-sex-addiction #main-wrapper #main { width: 640px; }
+.page-sex-addiction #page {
+  /*    background: url('images/trafficking-bg.png') no-repeat 50% 100%;
+*/
+}
+.page-sex-addiction #main-wrapper #main {
+  width: 640px;
+}
 .page-sex-addiction #main-wrapper #main h1.title {
   width: 265px;
   background: url('images/sex-addiction-header.png') no-repeat 0 0;
 }
-.page-human-trafficking #main-wrapper #main { width: 640px; }
+.page-human-trafficking #page {
+  /*    background: url('images/trafficking-bg.png') no-repeat 50% 100%;
+*/
+}
+.page-human-trafficking #main-wrapper #main {
+  width: 640px;
+}
 .page-human-trafficking #main-wrapper #main h1.title {
   width: 265px;
   background: url('images/human-trafficking-header.png') no-repeat 0 0;
+}
+.page-partners #page {
+  /*    background: url('images/partners-bg.png') no-repeat 85% 100%;
+*/
 }
 .page-partners #main h1.title {
   width: 150px;
   background: url('images/partners-header.png') no-repeat 0 0;
 }
-.page-partners #main-wrapper #main { width: 940px; }
-.page-purchase #main { min-height: 480px; }
+.page-partners #main-wrapper #main {
+  width: 940px;
+}
+.page-purchase #main {
+  min-height: 480px;
+}
 .page-purchase #main h1.title {
   width: 145px;
   background: url('images/coming-soon-header.png') no-repeat 0 0;
 }
-body.front #page { background: url('images/homepage-bg.png') no-repeat 50% 100%; }
-body.front #main { min-height: 485px; }
-body.front #main #content-area { display: none; }
-#cboxWrapper #cboxTitle { display: none !important; }
+body.front #page {
+  background: url('images/homepage-bg.png') no-repeat 50% 100%;
+}
+body.front #main {
+  min-height: 485px;
+}
+body.front #main #content-area {
+  display: none;
+}
+#cboxWrapper #cboxTitle {
+  display: none !important;
+}
