@@ -1,5 +1,5 @@
-$('.primary-navigation-wrapper .menu-118 a[href="/cast-and-crew-page"]').click(function () {
-  return false;
+$(document).ready(function () {
+    $('li.menu-118 > a').contents().unwrap();
 });
 
 Drupal.behaviors.initColorbox = function (context) {
