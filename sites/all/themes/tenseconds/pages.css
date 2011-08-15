@@ -45,7 +45,11 @@
 .page-emilygrace-yorgey #main-wrapper #main,
 .page-kazimir-boyle #main-wrapper #main,
 .page-duncan-ragsdale #main-wrapper #main,
-.page-caylin-cervetti #main-wrapper #main {
+.page-caylin-cervetti #main-wrapper #main,
+.page-elena-dering #main-wrapper #main,
+.page-david-perry #main-wrapper #main,
+.page-matthew-rampulla #main-wrapper #main,
+.page-aaron-horn #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
@@ -60,7 +64,11 @@
 .page-emilygrace-yorgey #main-wrapper #main h1.title,
 .page-kazimir-boyle #main-wrapper #main h1.title,
 .page-duncan-ragsdale #main-wrapper #main h1.title,
-.page-caylin-cervetti #main-wrapper #main h1.title {
+.page-caylin-cervetti #main-wrapper #main h1.title,
+.page-elena-dering #main-wrapper #main h1.title,
+.page-david-perry #main-wrapper #main h1.title,
+.page-matthew-rampulla #main-wrapper #main h1.title,
+.page-aaron-horn #main-wrapper #main h1.title {
   height: 60px;
 }
 .page-cast-and-crew-page #main-wrapper #main img,
@@ -74,7 +82,11 @@
 .page-emilygrace-yorgey #main-wrapper #main img,
 .page-kazimir-boyle #main-wrapper #main img,
 .page-duncan-ragsdale #main-wrapper #main img,
-.page-caylin-cervetti #main-wrapper #main img {
+.page-caylin-cervetti #main-wrapper #main img,
+.page-elena-dering #main-wrapper #main img,
+.page-david-perry #main-wrapper #main img,
+.page-matthew-rampulla #main-wrapper #main img,
+.page-aaron-horn #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -149,6 +161,34 @@
 .page-caylin-cervetti #main h1.title {
   width: 300px;
   background: url('images/nina-header.png') no-repeat 0 0;
+}
+.page-elena-dering #main {
+  min-height: 375px;
+}
+.page-elena-dering #main h1.title {
+  width: 300px;
+  background: url('images/elena-header.png') no-repeat 0 0;
+}
+.page-david-perry #main {
+  min-height: 375px;
+}
+.page-david-perry #main h1.title {
+  width: 300px;
+  background: url('images/david-header.png') no-repeat 0 0;
+}
+.page-aaron-horn #main {
+  min-height: 375px;
+}
+.page-aaron-horn #main h1.title {
+  width: 300px;
+  background: url('images/aaron-header.png') no-repeat 0 0;
+}
+.page-matthew-rampulla #main {
+  min-height: 375px;
+}
+.page-matthew-rampulla #main h1.title {
+  width: 300px;
+  background: url('images/matt-header.png') no-repeat 0 0;
 }
 .page-gallery #page {
   background: url('images/gallery-bg.png') no-repeat 50% 100%;
