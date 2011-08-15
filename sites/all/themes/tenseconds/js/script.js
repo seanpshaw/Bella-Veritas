@@ -1,4 +1,4 @@
-$('.primary-navigation-wrapper .menu-118 a[href="/"]').click(function () {
+$('.primary-navigation-wrapper .menu-118 a[href="/cast-and-crew-page"]').click(function () {
   return false;
 });
 
