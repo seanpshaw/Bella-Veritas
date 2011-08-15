@@ -2,8 +2,6 @@ $('.primary-navigation-wrapper .menu-118 a[href="/cast-and-crew-page"]').click(f
   return false;
 });
 
-function ($) {
-
 Drupal.behaviors.initColorbox = function (context) {
   var settings = Drupal.settings.colorbox;
   settings.slideshow = true;
