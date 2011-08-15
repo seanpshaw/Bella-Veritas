@@ -10,8 +10,6 @@ Drupal.behaviors.initColorbox = function (context) {
 
 }
 
-<script type="text/javascript">
-        jQuery(document).ready(function () {
-            jQuery('li.menu-118 > a').contents().unwrap();
-        });
-</script>
+$(document).ready(function () {
+  $('li.menu-118 > a').contents().unwrap();
+});
