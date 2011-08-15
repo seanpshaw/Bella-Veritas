@@ -5,7 +5,7 @@
  
 function tenseconds_theme(&$existing, $type, $theme, $path) {
  $hooks = array();
-  $hooks = bella_starter_theme($existing, $type, $theme, $path);
+  $hooks = zen_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
   /*
   $hooks['hook_name_here'] = array( // Details go here );
