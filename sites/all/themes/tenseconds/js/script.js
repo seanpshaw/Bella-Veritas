@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  $('li.menu-118 > a').contents().unwrap();
+$('.primary-navigation-wrapper .menu-118 a[href="/"]').click(function () {
+  return false;
 });
 
 function ($) {
