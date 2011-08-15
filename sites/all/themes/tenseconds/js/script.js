@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $('li.menu-118 > a').contents().unwrap();
+});
+
 function ($) {
 
 Drupal.behaviors.initColorbox = function (context) {
@@ -10,6 +14,3 @@ Drupal.behaviors.initColorbox = function (context) {
 
 }
 
-$(document).ready(function () {
-  $('li.menu-118 > a').contents().unwrap();
-});
