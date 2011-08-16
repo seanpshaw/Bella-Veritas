@@ -280,13 +280,6 @@
 #block-menu-menu-crew-menu ul li a:hover[href="/matt-coale"] {
   background: url('images/crew-nav-sprite.png') no-repeat -571px -88px;
 }
-#block-menu-menu-crew-menu ul li a:link[href="/matt-coale"], #block-menu-menu-crew-menu ul li a:visited[href="/matt-coale"] {
-  background: url('images/crew-nav-sprite.png') no-repeat -663px 0;
-  width: 91px;
-}
-#block-menu-menu-crew-menu ul li a:hover[href="/matt-coale"] {
-  background: url('images/crew-nav-sprite.png') no-repeat -663px -88px;
-}
 /*-------------------------
 ---------Main--------------
 -------------------------*/
