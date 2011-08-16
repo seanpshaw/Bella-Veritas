@@ -34,7 +34,7 @@
   width: 100px;
   background: url('images/synopsis-header.png') no-repeat 0 0;
 }
-.page-cast-and-crew-page #main-wrapper #main,
+.page-cast-page #main-wrapper #main,
 .page-jessejames-locorriere #main-wrapper #main,
 .page-amanda-bailey #main-wrapper #main,
 .page-claire-engler #main-wrapper #main,
@@ -49,11 +49,12 @@
 .page-elena-dering #main-wrapper #main,
 .page-david-perry #main-wrapper #main,
 .page-matthew-rampulla #main-wrapper #main,
-.page-aaron-horn #main-wrapper #main {
+.page-aaron-horn #main-wrapper #main,
+.page-crew-page #main-wrapper #main {
   min-height: 450px;
   position: relative;
 }
-.page-cast-and-crew-page #main-wrapper #main h1.title,
+.page-cast-page #main-wrapper #main h1.title,
 .page-jessejames-locorriere #main-wrapper #main h1.title,
 .page-amanda-bailey #main-wrapper #main h1.title,
 .page-claire-engler #main-wrapper #main h1.title,
@@ -68,10 +69,11 @@
 .page-elena-dering #main-wrapper #main h1.title,
 .page-david-perry #main-wrapper #main h1.title,
 .page-matthew-rampulla #main-wrapper #main h1.title,
-.page-aaron-horn #main-wrapper #main h1.title {
+.page-aaron-horn #main-wrapper #main h1.title,
+.page-crew-page #main-wrapper #main h1.title {
   height: 60px;
 }
-.page-cast-and-crew-page #main-wrapper #main img,
+.page-cast-page #main-wrapper #main img,
 .page-jessejames-locorriere #main-wrapper #main img,
 .page-amanda-bailey #main-wrapper #main img,
 .page-claire-engler #main-wrapper #main img,
@@ -86,7 +88,8 @@
 .page-elena-dering #main-wrapper #main img,
 .page-david-perry #main-wrapper #main img,
 .page-matthew-rampulla #main-wrapper #main img,
-.page-aaron-horn #main-wrapper #main img {
+.page-aaron-horn #main-wrapper #main img,
+.page-crew-page #main-wrapper #main img {
   top: 60px;
   right: -400px;
   border: 5px solid #372424;
@@ -97,7 +100,7 @@
   position: relative;
   position: absolute;
 }
-.page-jessejames-locorriere #main h1.title, .page-cast-and-crew-page #main h1.title {
+.page-jessejames-locorriere #main h1.title, .page-cast-page #main h1.title {
   width: 300px;
   background: url('images/jesse-header.png') no-repeat 0 0;
 }
@@ -169,10 +172,10 @@
   width: 300px;
   background: url('images/elena-header.png') no-repeat 0 0;
 }
-.page-david-perry #main {
+.page-david-perry #main, .page-crew-page #main {
   min-height: 375px;
 }
-.page-david-perry #main h1.title {
+.page-david-perry #main h1.title, .page-crew-page #main h1.title {
   width: 300px;
   background: url('images/david-header.png') no-repeat 0 0;
 }
