@@ -232,60 +232,60 @@
   cursor: pointer;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/david-perry"], #block-menu-menu-crew-menu ul li a:visited[href="/david-perry"] {
-  background: url('images/cast-crew-sprite.png') no-repeat 0 0;
+  background: url('images/crew-nav-sprite.png') no-repeat 0 0;
   width: 110px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/david-perry"] {
-  background: url('images/cast-crew-sprite.png') no-repeat 0 -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat 0 -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/elena-dering"], #block-menu-menu-crew-menu ul li a:visited[href="/elena-dering"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -110px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -110px 0;
   width: 93px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/elena-dering"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -110px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -110px -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/matthew-rampulla"], #block-menu-menu-crew-menu ul li a:visited[href="/matthew-rampulla"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -203px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -203px 0;
   width: 92px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/matthew-rampulla"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -203px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -203px -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/claire-engler"], #block-menu-menu-crew-menu ul li a:visited[href="/claire-engler"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -295px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -295px 0;
   width: 92px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/claire-engler"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -295px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -295px -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/aaron-horn"], #block-menu-menu-crew-menu ul li a:visited[href="/aaron-horn"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -387px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -387px 0;
   width: 92px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/aaron-horn"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -387px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -387px -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/kazimir-boyle"], #block-menu-menu-crew-menu ul li a:visited[href="/kazimir-boyle"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -479px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -479px 0;
   width: 92px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/kazimir-boyle"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -479px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -479px -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/duncan-ragsdale"], #block-menu-menu-crew-menu ul li a:visited[href="/duncan-ragsdale"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -571px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -571px 0;
   width: 92px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/duncan-ragsdale"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -571px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -571px -88px;
 }
 #block-menu-menu-crew-menu ul li a:link[href="/matt-coale"], #block-menu-menu-crew-menu ul li a:visited[href="/matt-coale"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -663px 0;
+  background: url('images/crew-nav-sprite.png') no-repeat -663px 0;
   width: 91px;
 }
 #block-menu-menu-crew-menu ul li a:hover[href="/matt-coale"] {
-  background: url('images/cast-crew-sprite.png') no-repeat -663px -88px;
+  background: url('images/crew-nav-sprite.png') no-repeat -663px -88px;
 }
 /*-------------------------
 ---------Main--------------
