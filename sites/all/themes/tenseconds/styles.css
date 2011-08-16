@@ -189,7 +189,7 @@
 }
 #block-menu-secondary-links ul li a:link[href="/christine-poythress"], #block-menu-secondary-links ul li a:visited[href="/christine-poythress"] {
   background: url('images/cast-nav-sprite.png') no-repeat -663px 0;
-  width: 91px;
+  width: 95px;
 }
 #block-menu-secondary-links ul li a:hover[href="/christine-poythress"] {
   background: url('images/cast-nav-sprite.png') no-repeat -663px -88px;
