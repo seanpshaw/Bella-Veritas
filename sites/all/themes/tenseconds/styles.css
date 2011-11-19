@@ -292,6 +292,9 @@
   background: url('images/trafficking-border.png') no-repeat 0 0;
   padding-top: 10px;
 }
+#main-wrapper-inner {
+  background: url('images/home-headline.png') no-repeat center 30px;
+}
 /*-------------------------
 ---------Footer------------
 -------------------------*/
