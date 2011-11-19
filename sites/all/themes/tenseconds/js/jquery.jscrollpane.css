@@ -60,6 +60,7 @@
 	-moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
+  border: 1px solid #b8a491;
 }
 
 .jspDrag
