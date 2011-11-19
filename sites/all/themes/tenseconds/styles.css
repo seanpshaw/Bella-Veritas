@@ -389,7 +389,7 @@
   vertical-align: top;
   margin-top: 3px;
   display: inline-block;
-  width: 228px;
+  width: 125px;
   font-size: 0.75em;
   color: #8c1b2f;
 }
@@ -406,7 +406,7 @@
   position: relative;
 }
 .node-type-webform form .webform-component .form-item input {
-  width: 435px;
+  width: 295px;
   height: 27px;
 }
 .node-type-webform input.form-submit {
@@ -420,6 +420,8 @@
   text-indent: -1000px;
   overflow: hidden;
   display: block;
+  float: right;
+  margin-right: 30px;
 }
 .node-type-webform input.form-submit:hover {
   background: url('images/submit-btn.png') no-repeat 0 -36px;
