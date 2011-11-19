@@ -74,15 +74,6 @@
 
           </div></div> <!-- /.section, /#content -->
 
-          <?php if ($primary_links || $navigation): ?>
-      
-            <div id="navigation"><div class="section clearfix">
-              <?php print $themed_primary_links; ?>
-              <?php print $navigation; ?>
-
-            </div></div> <!-- /.section, /#navigation -->
-          <?php endif; ?>
-
         </div> <!-- /#main -->
         
         <?php if ($sidebar_first): ?>
@@ -110,6 +101,9 @@
     </div> <!-- /#page-inner -->
 	  <?php if ($footer || $footer_message || $secondary_links || $address_raw || $credits): ?>
 	    <div id="footer-wrapper">	
+	      <div id="page-bottom" class="container-16">
+          <?php print $navigation; ?>
+        </div>
 				<div id="footer" class="container-16 clearfix clear">
 				  <div id="footer-inner">
 
