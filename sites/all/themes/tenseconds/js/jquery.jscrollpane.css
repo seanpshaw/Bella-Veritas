@@ -64,7 +64,7 @@
 
 .jspDrag
 {
-	background: #77272f;
+	background: url('../image/grip.png') no-repeat center center #77272f;
 	-moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
