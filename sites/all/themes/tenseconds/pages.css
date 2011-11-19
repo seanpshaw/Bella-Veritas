@@ -288,6 +288,9 @@ body.front #main {
 body.front #main #content-area {
   height: 360px;
 }
+body.front #main h1.title {
+  display: none;
+}
 #cboxWrapper #cboxTitle {
   display: none !important;
 }
