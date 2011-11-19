@@ -295,6 +295,11 @@
 body.front #main-wrapper-inner {
   background: url('images/home-headline.png') no-repeat center 50px;
 }
+body.front #main-wrapper #main #content-area {
+  background: transparent;
+  padding-top: 0px;
+  width: 400px;
+}
 /*-------------------------
 ---------Footer------------
 -------------------------*/
