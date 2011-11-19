@@ -286,7 +286,7 @@ body.front #main {
   min-height: 485px;
 }
 body.front #main #content-area {
-  display: none;
+  height: 360px;
 }
 #cboxWrapper #cboxTitle {
   display: none !important;
