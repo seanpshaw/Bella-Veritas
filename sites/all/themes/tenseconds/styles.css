@@ -381,6 +381,34 @@
 #partner-right {
   width: 450px;
 }
+.node-type-webform form .webform-component .form-item {
+  margin: 8px 0;
+}
+.node-type-webform form .webform-component .form-item label {
+  font-weight: bold;
+  vertical-align: top;
+  margin-top: 3px;
+  display: inline-block;
+  width: 228px;
+  font-size: 0.75em;
+  color: #8c1b2f;
+}
+.node-type-webform form .webform-component .form-item label .form-required {
+  color: #c47f80;
+}
+.node-type-webform form .webform-component .form-item input {
+  background: #fef4ed;
+  border: 1px solid #c47f80;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(sites/all/themes/tenseconds/PIE.htc);
+  position: relative;
+}
+.node-type-webform form .webform-component .form-item input {
+  width: 435px;
+  height: 27px;
+}
 .node-type-webform input.form-submit {
   background: url('images/submit-btn.png') no-repeat 0 0;
   border: 0px none;

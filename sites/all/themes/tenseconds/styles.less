@@ -418,6 +418,34 @@
 
 // WEBFORM STYLES 
 .node-type-webform {
+  form {
+    .webform-component {
+      .form-item {
+        margin: 8px 0;
+        label {
+          font-weight: bold;
+          vertical-align: top;
+          margin-top: 3px;
+          display: inline-block;
+          width: 228px;
+          font-size: 0.75em;
+          color: #8c1b2f;
+          .form-required {
+            color: #c47f80;
+          }
+        }
+        input {
+          background: #fef4ed;
+          border: 1px solid #c47f80;
+          .border-radius(5px);
+        }
+        input {
+          width: 435px;
+          height: 27px;
+        }
+      }
+    }
+  }
   input.form-submit {
     background: url('images/submit-btn.png') no-repeat 0 0;
     border: 0px none;
