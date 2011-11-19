@@ -404,11 +404,9 @@
   border-radius: 5px;
   behavior: url(sites/all/themes/tenseconds/PIE.htc);
   position: relative;
-  -moz-box-shadow: 1px 1px 5px #666666 -1px 15px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 1px 1px 5px #666666 -1px 15px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 5px #666666 -1px 15px rgba(0, 0, 0, 0.4);
-  behavior: url(sites/all/themes/tenseconds/PIE.htc);
-  position: relative;
+  -moz-box-shadow: 1px 1px 5px #666666;
+  -webkit-box-shadow: 1px 1px 5px #666666;
+  box-shadow: 1px 1px 5px #666666;
 }
 .node-type-webform form .webform-component .form-item input {
   width: 295px;
