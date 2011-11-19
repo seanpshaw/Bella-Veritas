@@ -416,6 +416,27 @@
   width: 450px;
 }
 
+// WEBFORM STYLES 
+.node-type-webform {
+  input.form-submit {
+    background: url('images/submit-btn.png') no-repeat 0 0;
+    border: 0px none;
+    cursor: pointer;
+    height: 35px;
+    width: 82px;
+    position: relative;
+    text-transform: capitalize;
+    text-indent: -1000px;
+    overflow: hidden;
+    display: block;
+    &:hover {
+      background: url('images/submit-btn.png') no-repeat 0 -36px;
+    }
+    &:active {
+      top: 1px;
+    }
+  }
+}
 
 /* slightly enhanced, universal clearfix hack */
 .clearfix:after {
