@@ -305,6 +305,10 @@ body.front #main-wrapper #main #content-area {
   background: transparent;
   padding-top: 0px;
   width: 400px;
+  height: 360px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  padding-right: 20px;
 }
 /*-------------------------
 ---------Footer------------
