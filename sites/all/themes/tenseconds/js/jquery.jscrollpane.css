@@ -57,11 +57,17 @@
 {
 	background: #e3d0b8;
 	position: relative;
+	-moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .jspDrag
 {
 	background: #77272f;
+	-moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
 	position: relative;
 	top: 0;
 	left: 0;
