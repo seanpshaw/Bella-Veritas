@@ -279,6 +279,13 @@
   width: 330px;
   background: url('images/coming-soon-header.png') no-repeat 0 0;
 }
+body.page-content-pre-order-10-seconds #main {
+  min-height: 480px;
+}
+body.page-content-pre-order-10-seconds #main h1.title {
+  width: 330px;
+  background: url('images/coming-soon-header.png') no-repeat 0 0;
+}
 body.front #page {
   background: url('images/homepage-bg-new.png') no-repeat 75% 100%;
 }
