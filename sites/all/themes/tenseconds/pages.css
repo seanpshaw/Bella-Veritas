@@ -272,10 +272,10 @@
 .page-partners #main-wrapper #main {
   width: 940px;
 }
-.page-purchase #main {
+.page-purchase. page-content-pre-order-10-seconds #main {
   min-height: 480px;
 }
-.page-purchase #main h1.title {
+.page-purchase. page-content-pre-order-10-seconds #main h1.title {
   width: 330px;
   background: url('images/coming-soon-header.png') no-repeat 0 0;
 }
