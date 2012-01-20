@@ -321,7 +321,7 @@ body.front #main-wrapper #main #content-area {
   padding-left: 65px;
   margin-bottom: 0em;
 }
-.content {
+#main .content {
   margin-bottom: 125px;
 }
 /*-------------------------
