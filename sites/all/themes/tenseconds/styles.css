@@ -293,7 +293,8 @@
   padding-top: 10px;
 }
 body.front #main-wrapper-inner {
-  background: url('images/home-headline.png') no-repeat center 50px;
+  /*  background: url('images/home-headline.png') no-repeat center 50px;
+*/
 }
 body.front #main-wrapper-inner h3 {
   color: #72373f;
