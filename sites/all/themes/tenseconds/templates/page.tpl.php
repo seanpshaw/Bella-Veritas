@@ -121,7 +121,7 @@
 		      <div id="address_raw"><?php print $address_raw; ?></div>
 		    </div>
 		    <div id="footer-credits" class="container-16 clearfix clear">
-          <div id="credits">Design &amp; Development by <a href="http://www.seanpshaw.com">Sean Shaw</a></div>
+          <div id="credits">Design &amp; Development by Sean Shaw</div>
 		  </div> <!-- /#footer-wrapper -->
 	  <?php endif; ?>
 	</div> <!--  /#page -->
